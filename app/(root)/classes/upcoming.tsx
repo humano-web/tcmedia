@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 
 const Upcoming = () => {
   return (
-    <motion.div   animate={{
+    <motion.div animate={{
     scale: 2,
     transition: { duration: 2 }
   }}

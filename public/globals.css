@@ -157,7 +157,7 @@ body {
 .gradient-background {
   background: linear-gradient(270deg, #112700, #71bf2f, #d3ffba, #defffe, #1ebdbd, #002828);
   background-size: 1200% 1200% !important;
-  animation: gradient-animation 60s ease infinite;
+  animation: gradient-animation 120s ease infinite;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

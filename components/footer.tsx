@@ -1,16 +1,23 @@
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="self-stretch p-8 flex flex-col justify-center items-start gap-8">
+    <footer className="w-full min-h-screen p-8 flex flex-col justify-center items-start gap-8 snap-start snap-always">
       <div className="w-full px-4 py-8 bg-tcteal rounded-xl long-shadow-teal-dark border-4 border-tcteal-dark flex flex-col justify-start items-start gap-9">
         <div className="self-stretch inline-flex justify-start items-center gap-12">
-          <Image
-            alt=""
-            width="168"
-            height="64"
-            className="w-36 h-28"
-            src="https://placehold.co/145x116"
-          />
+          <div className="relative w-2/4 h-20 flex justify-center items-center">
+          <div className="justify-start text-tcteal-light text-6xl font-medium font-['Montserrat'] leading-10 absolute w-full" 
+          style={{
+            WebkitTextFillColor: "white",
+            WebkitTextStrokeWidth: "4px",
+            WebkitTextStrokeColor: "#002828",
+            }}
+>
+          Thurston Community Media
+          </div>
+          <div className="justify-start text-tcteal-light text-6xl font-medium font-['Montserrat'] leading-10 absolute w-full" >
+          Thurston Community Media
+          </div>
+          </div>
           <div className="flex-1 inline-flex flex-col justify-center items-end gap-4">
             <div className="inline-flex justify-start items-center gap-4">
               <div
@@ -604,7 +611,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <div className="left-[41px] top-[4.62px] absolute justify-start text-white text-[8.38px] font-normal font-['Open_Sans']">
+                  <div className="left-10 top-12 absolute justify-start text-white text-[8.38px] font-normal font-['Open_Sans']">
                     GET IT ON
                   </div>
                   <div

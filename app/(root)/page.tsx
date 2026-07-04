@@ -394,7 +394,6 @@ export default function Home() {
         author="Nicole Sharkody"
         color="green"
       />
-
       <Footer />
     </main>
   );
