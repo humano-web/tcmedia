@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tcteal: #1ebdbd;
+  --color-tcgreen: #71bf2f;
+  --color-tcteal-dark: #002828;
+  --color-tcgreen-dark: #112700;
+  --color-tcteal-light: #defffe;
+  --color-tcgreen-light: #d3ffba;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.slow-spinner {
+  animation: spin 40s linear infinite;
+  will-change: transform;
+}
+
+.text-title {
+  font-size: 15em;
+}
+
+.long-shadow-green {
+  box-shadow: 0px 0px 0px var(--color-tcgreen),
+    0px 0px 0px var(--color-tcgreen),
+    1px 1px 0px var(--color-tcgreen),
+    2px 2px 0px var(--color-tcgreen),
+    3px 3px 0px var(--color-tcgreen),
+    4px 4px 0px var(--color-tcgreen),
+    6px 6px 0px var(--color-tcgreen),
+    8px 8px 0px var(--color-tcgreen),
+    10px 10px 0px var(--color-tcgreen),
+    12px 12px 0px var(--color-tcgreen);
+}
+
+.long-shadow-green-text {
+  text-shadow: 0px 0px 0px var(--color-tcgreen),
+    0px 0px 0px var(--color-tcgreen),
+    1px 1px 0px var(--color-tcgreen),
+    2px 2px 0px var(--color-tcgreen),
+    3px 3px 0px var(--color-tcgreen),
+    4px 4px 0px var(--color-tcgreen),
+    6px 6px 0px var(--color-tcgreen),
+    8px 8px 0px var(--color-tcgreen),
+    10px 10px 0px var(--color-tcgreen),
+    12px 12px 0px var(--color-tcgreen);
+}
+
+.long-shadow-dark-green-text {
+  text-shadow: 0px 0px 0px var(--color-tcgreen-dark),
+    0px 0px 0px var(--color-tcgreen-dark),
+    1px 1px 0px var(--color-tcgreen-dark),
+    2px 2px 0px var(--color-tcgreen-dark),
+    3px 3px 0px var(--color-tcgreen-dark),
+    4px 4px 0px var(--color-tcgreen-dark),
+    6px 6px 0px var(--color-tcgreen-dark),
+    8px 8px 0px var(--color-tcgreen-dark),
+    10px 10px 0px var(--color-tcgreen-dark),
+    12px 12px 0px var(--color-tcgreen-dark);
+}
+
+.short-shadow-teal-dark:hover {
+  box-shadow: 0px 0px 0px var(--color-tcteal-dark),
+    0px 0px 0px var(--color-tcteal-dark),
+    1px 1px 0px var(--color-tcteal-dark),
+    2px 2px 0px var(--color-tcteal-dark),
+    3px 3px 0px var(--color-tcteal-dark),
+    4px 4px 0px var(--color-tcteal-dark),
+    6px 6px 0px var(--color-tcteal-dark);
+}
+
+.short-shadow-green-dark:hover {
+  box-shadow: 0px 0px 0px var(--color-tcgreen-dark),
+    0px 0px 0px var(--color-tcgreen-dark),
+    1px 1px 0px var(--color-tcgreen-dark),
+    2px 2px 0px var(--color-tcgreen-dark),
+    3px 3px 0px var(--color-tcgreen-dark),
+    4px 4px 0px var(--color-tcgreen-dark),
+    6px 6px 0px var(--color-tcgreen-dark);
+}
+
+.shadow-green-dark {
+  box-shadow: 0px 0px 0px var(--color-tcgreen-dark),
+    0px 0px 0px var(--color-tcgreen-dark),
+    1px 1px 0px var(--color-tcgreen-dark),
+    2px 2px 0px var(--color-tcgreen-dark),
+    3px 3px 0px var(--color-tcgreen-dark),
+    4px 4px 0px var(--color-tcgreen-dark),
+    6px 6px 0px var(--color-tcgreen-dark);
+}
+
+.long-shadow-teal {
+  box-shadow: 0px 0px 0px var(--color-tcteal),
+    0px 0px 0px var(--color-tcteal),
+    1px 1px 0px var(--color-tcteal),
+    2px 2px 0px var(--color-tcteal),
+    3px 3px 0px var(--color-tcteal),
+    4px 4px 0px var(--color-tcteal),
+    6px 6px 0px var(--color-tcteal),
+    8px 8px 0px var(--color-tcteal),
+    10px 10px 0px var(--color-tcteal),
+    12px 12px 0px var(--color-tcteal);
+}
+
+.long-shadow-green-dark {
+  box-shadow: 0px 0px 0px var(--color-tcgreen-dark),
+    0px 0px 0px var(--color-tcgreen-dark),
+    1px 1px 0px var(--color-tcgreen-dark),
+    2px 2px 0px var(--color-tcgreen-dark),
+    3px 3px 0px var(--color-tcgreen-dark),
+    4px 4px 0px var(--color-tcgreen-dark),
+    6px 6px 0px var(--color-tcgreen-dark),
+    8px 8px 0px var(--color-tcgreen-dark),
+    10px 10px 0px var(--color-tcgreen-dark),
+    11px 11px 0px var(--color-tcgreen-dark),
+    12px 12px 0px var(--color-tcgreen-dark),
+    13px 13px 0px var(--color-tcgreen-dark),
+    14px 14px 0px var(--color-tcgreen-dark),
+    15px 15px 0px var(--color-tcgreen-dark),
+    16px 16px 0px var(--color-tcgreen-dark);
+}
+
+.long-shadow-teal-dark {
+  box-shadow: 0px 0px 0px var(--color-tcteal-dark),
+    0px 0px 0px var(--color-tcteal-dark),
+    1px 1px 0px var(--color-tcteal-dark),
+    2px 2px 0px var(--color-tcteal-dark),
+    3px 3px 0px var(--color-tcteal-dark),
+    4px 4px 0px var(--color-tcteal-dark),
+    6px 6px 0px var(--color-tcteal-dark),
+    8px 8px 0px var(--color-tcteal-dark),
+    10px 10px 0px var(--color-tcteal-dark),
+    11px 11px 0px var(--color-tcteal-dark),
+    12px 12px 0px var(--color-tcteal-dark),
+    13px 13px 0px var(--color-tcteal-dark),
+    14px 14px 0px var(--color-tcteal-dark),
+    15px 15px 0px var(--color-tcteal-dark),
+    16px 16px 0px var(--color-tcteal-dark);
+}
+
+.gradient-background {
+  background: linear-gradient(270deg, #112700, #71bf2f, #d3ffba, #defffe, #1ebdbd, #002828);
+  background-size: 1200% 1200% !important;
+  animation: gradient-animation 60s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
