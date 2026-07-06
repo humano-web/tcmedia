@@ -650,7 +650,7 @@ const Footer = () => {
                   </div>
                   <div
                     data-svg-wrapper
-                    className="left-[20.49px] top-[14.50px] absolute"
+                    className="left-5 top-3.5 absolute"
                   >
                     <svg
                       width="13"
@@ -667,7 +667,7 @@ const Footer = () => {
                   </div>
                   <div
                     data-svg-wrapper
-                    className="left-[10px] top-[9.28px] absolute"
+                    className="left-3 top-2.5 absolute"
                   >
                     <svg
                       width="12"
@@ -684,7 +684,7 @@ const Footer = () => {
                   </div>
                   <div
                     data-svg-wrapper
-                    className="left-[10.04px] top-[7.14px] absolute"
+                    className="left-2.5 top-1.5 absolute"
                   >
                     <svg
                       width="17"
