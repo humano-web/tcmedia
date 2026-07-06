@@ -5,7 +5,7 @@ import Upcoming from './upcoming';
 const ClassesPage = () => {
   return (
     <>
-      <Title name="Classes" place={0} />
+      <Title name="Classes" />
       <div className="bg-tcgreen-light self-stretch inline-flex justify-start items-start gap-2.5">
       <Upcoming />
 
