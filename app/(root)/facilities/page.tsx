@@ -4,7 +4,7 @@ import FCards from "./fcards";
 const Facilities = () => {
   return (
     <>
-      <Title name="Facilities" place={2} />
+      <Title name="Facilities"  />
       
       <div className="bg-lime-700 self-stretch inline-flex justify-start items-start gap-2.5">
         <div className="self-stretch p-32 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
