@@ -27,6 +27,26 @@ TC Media is a Next.js site for Thurston Community Media in Olympia, WA. The home
 - Tailwind CSS
 - Framer Motion
 
+## Deployment
+
+The deploy workflow (`.github/workflows/deploy.yml`) pushes to an EC2 instance via SSH on every push to `main`. Before it can run successfully, add the following secrets under **Settings → Secrets and variables → Actions** in the GitHub repository:
+
+| Secret name | Description |
+|-------------|-------------|
+| `EC2_HOST`  | Public IP address or hostname of the EC2 instance |
+| `EC2_USER`  | SSH username (e.g. `ubuntu` or `ec2-user`) |
+| `EC2_KEY`   | Private SSH key (PEM format) used to authenticate |
+
+The deploy script runs on the server:
+
+```bash
+cd /var/www/tcmedia
+git pull origin main
+npm install
+npm run build
+pm2 restart tcmedia
+```
+
 ## Development
 
 Install dependencies and run the app locally:
