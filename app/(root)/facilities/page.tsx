@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Title from "@/components/title";
 import FCards from "./fcards";
+
+export const metadata: Metadata = {
+  title: "Facilities",
+};
 
 const Facilities = () => {
   return (

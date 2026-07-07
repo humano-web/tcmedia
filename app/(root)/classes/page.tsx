@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Title from "@/components/title";
 import Past from './past';
 import Upcoming from './upcoming';
+
+export const metadata: Metadata = {
+  title: "Classes",
+};
 
 const ClassesPage = () => {
   return (
