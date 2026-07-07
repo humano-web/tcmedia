@@ -15,9 +15,30 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
+          script_stop: true
+          command_timeout: 30m
           script: |
-            cd /var/www/tcmedia
-            git pull origin main
-            npm install
+            set -euxo pipefail
+
+            APP_DIR=/var/www/tcmedia
+            cd "$APP_DIR"
+
+            # Ensure clean, reproducible checkout
+            git fetch --all --prune
+            git reset --hard origin/main
+
+            # Ensure expected runtime is available
+            node -v
+            npm -v
+
+            # Reproducible install (preferred over npm install for CI/CD)
+            npm ci
+
             npm run build
-            pm2 restart tcmedia
+
+            # Restart if exists, otherwise start
+            pm2 describe tcmedia >/dev/null 2>&1 \
+              && pm2 restart tcmedia \
+              || pm2 start npm --name tcmedia -- start
+
+            pm2 save
