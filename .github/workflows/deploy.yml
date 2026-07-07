@@ -20,25 +20,26 @@ jobs:
           script: |
             set -euxo pipefail
 
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+            nvm install 24
+            nvm use 24
+
             APP_DIR=/var/www/tcmedia
             cd "$APP_DIR"
 
-            # Ensure clean, reproducible checkout
             git fetch --all --prune
             git reset --hard origin/main
 
-            # Ensure expected runtime is available
             node -v
             npm -v
 
-            # Reproducible install (preferred over npm install for CI/CD)
             npm ci
-
             npm run build
 
-            # Restart if exists, otherwise start
             pm2 describe tcmedia >/dev/null 2>&1 \
-              && pm2 restart tcmedia \
+              && pm2 restart tcmedia --update-env \
               || pm2 start npm --name tcmedia -- start
 
             pm2 save
