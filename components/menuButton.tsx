@@ -8,12 +8,11 @@ type MenuButtonProps = {
 const MenuButton = ({ name, icon }: MenuButtonProps) => {
   return (
     <Link href={`/${name.toLowerCase()}`}>
-      <div className="relative w-36 h-8 flex justify-center items-center">
+      <div className="relative 2xl:flex h-8 w-full min-w-28 justify-center items-center sm:h-9 sm:min-w-32 lg:w-36">
         <div
-          className="absolute left-0 top-0 hover:-top-1 hover:-left-1 transition-all duration-100 px-2 w-full bg-tcgreen  rounded-full short-shadow-green-dark
-        border-4 border-tcgreen-dark flex justify-start items-center gap-1 group overflow-hidden"
+          className="absolute left-0 top-0 w-full rounded-full bg-tcgreen px-2 transition-all duration-100 hover:-left-1 hover:-top-1 short-shadow-green-dark border-4 border-tcgreen-dark 2xl:flex justify-start items-center gap-1 group overflow-hidden"
       >
-        <div className="justify-start text-tcgreen-dark text-lg font-bold font-['Montserrat'] tracking-tighter">
+        <div className="justify-start text-sm 2xl:text-lg text-tcgreen-dark font-bold font-['Montserrat'] tracking-tighter">
           {name}
         </div>
       </div>

@@ -6,10 +6,10 @@ import { useState } from "react";
 const Title = ({ name = "Default" }) => {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-3 gap-8 pt-50 pb-20 text-tcgreen-dark text-9xl font-extrabold -tracking-widest w-3/4">
+      <div className="2xl:flex items-center justify-center">
+        <div className="2xl:grid w-full max-w-screen-2xl 2xl:grid-cols-1 gap-4 px-4 pb-12 pt-28 text-tcgreen-dark 2xl:text-4xl 2xl:text-6xl 2xl:text-8xl 2xl:text-9xl font-extrabold -tracking-widest 2xl:grid-cols-2 2xl:grid-cols-3 sm:gap-6 lg:gap-8 sm:pb-16 sm:pt-40 lg:pb-20 lg:pt-50">
           <motion.div
-            className="bg-tcgreen col-span-2 h-50 rounded-full flex items-center justify-start border-8 long-shadow-green-dark border-tcgreen-dark font-['Montserrat']"
+            className="col-span-1 sm:col-span-2 h-28 sm:h-40 lg:h-50 rounded-full border-4 sm:border-6 lg:border-8 border-tcgreen-dark bg-tcgreen 2xl:flex items-center justify-start font-['Montserrat'] long-shadow-green-dark"
             initial={{
               opacity: 0,
               x: 12,
@@ -26,35 +26,35 @@ const Title = ({ name = "Default" }) => {
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <div className="ps-4">{name}</div>
+            <div className="ps-4 sm:ps-6">{name}</div>
           </motion.div>
           <Image
             src="https://picsum.photos/500/300"
             alt={name}
             width={500}
             height={300}
-            className="object-cover overflow-hidden rounded-full w-full h-50 border-8 bg-tcgreen-dark long-shadow-green-dark border-tcgreen-dark"
+            className="h-40 sm:h-44 lg:h-50 w-full rounded-full border-4 sm:border-6 lg:border-8 border-tcgreen-dark bg-tcgreen-dark object-cover overflow-hidden long-shadow-green-dark"
           />
           <Image
             src="https://picsum.photos/500/300"
             alt={name}
             width={500}
             height={300}
-            className="object-cover overflow-hidden rounded-full w-full h-50 border-8 bg-tcgreen-dark long-shadow-green-dark border-tcgreen-dark"
+            className="h-40 sm:h-44 lg:h-50 w-full rounded-full border-4 sm:border-6 lg:border-8 border-tcgreen-dark bg-tcgreen-dark object-cover overflow-hidden long-shadow-green-dark"
           />
           <Image
             src="https://picsum.photos/500/300"
             alt={name}
             width={500}
             height={300}
-            className="object-cover overflow-hidden rounded-full w-full h-50 border-8 bg-tcgreen-dark long-shadow-green-dark border-tcgreen-dark"
+            className="h-40 sm:h-44 lg:h-50 w-full rounded-full border-4 sm:border-6 lg:border-8 border-tcgreen-dark bg-tcgreen-dark object-cover overflow-hidden long-shadow-green-dark"
           />
           <Image
             src="https://picsum.photos/500/300"
             alt={name}
             width={500}
             height={300}
-            className="object-cover overflow-hidden rounded-full w-full h-50 border-8 bg-tcgreen-dark long-shadow-green-dark border-tcgreen-dark"
+            className="h-40 sm:h-44 lg:h-50 w-full rounded-full border-4 sm:border-6 lg:border-8 border-tcgreen-dark bg-tcgreen-dark object-cover overflow-hidden long-shadow-green-dark"
           />
         </div>
       </div>

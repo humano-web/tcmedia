@@ -12,7 +12,7 @@ const Menu = () => {
   ];
   return (
     <menu className="">
-      <div className="grid grid-cols-4 grid-rows-2 gap-4 content-center">
+      <div className="2xl:grid 2xl:grid-cols-4 2xl:grid-rows-2 gap-4 content-center">
         
         {menuItems.map((item,key) => (
           <MenuButton key={key} name={item.name} icon={item.icon} />

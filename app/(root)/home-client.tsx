@@ -15,7 +15,7 @@ export default function Home() {
   if (!isMounted) {
     return (
       <main
-        className="w-full h-screen overflow-y-scroll overflow-x-hidden relative inline-flex flex-col justify-start items-start snap-mandatory snap-y"
+        className="w-full h-screen overflow-y-scroll overflow-x-hidden relative 2xl:inline-flex 2xl:flex-col justify-start items-start snap-mandatory snap-y"
         aria-busy="true"
       />
     );
@@ -25,22 +25,22 @@ export default function Home() {
     "A Creative Media Production Studio In the South Sound".split("");
 
   return (
-    <main className="w-full h-screen overflow-y-scroll overflow-x-hidden relative inline-flex flex-col justify-start items-start snap-mandatory snap-y">
+    <main className="w-full h-screen overflow-y-scroll overflow-x-hidden relative 2xl:inline-flex 2xl:flex-col justify-start items-start snap-mandatory snap-y">
       {/* Donation hero section */}
-      <div className="w-full min-h-screen px-7 pt-52 pb-12 inline-flex justify-start items-center gap-0 relative bg-[url('/6e18cc_a7b880eb0aab4ad0aee6bedf22d734de~mv2.avif')] bg-cover snap-start snap-always">
-        <div className="bg-tcgreen-dark/60 p-8 absolute left-0 top-0 h-full flex justify-center items-center">
+      <div className="w-full min-h-screen px-7 pt-52 pb-12 2xl:inline-flex justify-start items-center gap-0 relative bg-[url('/6e18cc_a7b880eb0aab4ad0aee6bedf22d734de~mv2.avif')] bg-cover snap-start snap-always">
+        <div className="bg-tcgreen-dark/60 p-8 absolute left-0 top-0 h-full 2xl:flex justify-center items-center">
           <motion.div
-            className="w-1/4 h-full flex flex-col justify-center items-center gap-2"
+            className="w-1/4 h-full 2xl:flex 2xl:flex-col justify-center items-center gap-2"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <motion.div className="self-stretch justify-start text-white text-4xl font-medium font-['Montserrat'] leading-8">
+            <motion.div className="self-stretch justify-start text-white 2xl:text-4xl font-medium font-['Montserrat'] leading-8">
               <span>Help TCMedia with your donation</span>
             </motion.div>
-            <div className="self-stretch p-8 bg-tcteal-light rounded-2xl flex flex-col justify-start items-start gap-6">
-              <div className="self-stretch h-7 inline-flex justify-start items-center gap-2">
-                <div className="size-6 px-1 bg-tcgreen rounded-full flex justify-center items-center">
+            <div className="self-stretch p-8 bg-tcteal-light rounded-2xl 2xl:flex 2xl:flex-col justify-start items-start gap-6">
+              <div className="self-stretch h-7 2xl:inline-flex justify-start items-center gap-2">
+                <div className="size-6 px-1 bg-tcgreen rounded-full 2xl:flex justify-center items-center">
                   <div data-svg-wrapper className="relative">
                     <svg
                       width="16"
@@ -59,103 +59,103 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <div className="h-7 flex justify-start items-start">
-                  <div className="justify-start text-tcgreen-dark text-xl font-semibold font-['Montserrat'] leading-7">
+                <div className="h-7 2xl:flex justify-start items-start">
+                  <div className="justify-start text-tcgreen-dark 2xl:text-xl font-semibold font-['Montserrat'] leading-7">
                     Choose amount
                   </div>
                 </div>
               </div>
-              <div className="self-stretch h-9 pr-0 inline-flex justify-start items-start gap-2">
-                <div className="flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-sm font-medium font-['Montserrat'] leading-5">
+              <div className="self-stretch h-9 pr-0 2xl:inline-flex justify-start items-start gap-2">
+                <div className="2xl:flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark 2xl:flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-sm font-medium font-['Montserrat'] leading-5">
                     One-time
                   </div>
                 </div>
-                <div className="flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-sm font-medium font-['Montserrat'] leading-5">
+                <div className="2xl:flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark 2xl:flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-sm font-medium font-['Montserrat'] leading-5">
                     Monthly
                   </div>
                 </div>
-                <div className="flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-sm font-medium font-['Montserrat'] leading-5">
+                <div className="2xl:flex-1 h-9 px-4 py-2 bg-tcgreen-light rounded-lg border-2 border-tcgreen-dark 2xl:flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-sm font-medium font-['Montserrat'] leading-5">
                     Yearly
                   </div>
                 </div>
               </div>
-              <div className="self-stretch h-32 relative grid grid-cols-2 gap-4">
-                <div className="w-auto h-14 px-4 py-2 left-0 top-0  bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg inline-flex justify-center items-center content-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-lg font-semibold font-['Montserrat'] leading-7">
+              <div className="self-stretch h-32 relative 2xl:grid 2xl:grid-cols-2 gap-4">
+                <div className="w-auto h-14 px-4 py-2 left-0 top-0 bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg 2xl:inline-flex justify-center items-center content-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-lg font-semibold font-['Montserrat'] leading-7">
                     $1000
                   </div>
                 </div>
-                <div className="w-auto h-14 px-4 py-2  top-0  bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg inline-flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-lg font-semibold font-['Montserrat'] leading-7">
+                <div className="w-auto h-14 px-4 py-2 top-0 bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg 2xl:inline-flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-lg font-semibold font-['Montserrat'] leading-7">
                     $500
                   </div>
                 </div>
-                <div className="w-auto h-14 px-4 py-2 left-0   bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg inline-flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-lg font-semibold font-['Montserrat'] leading-7">
+                <div className="w-auto h-14 px-4 py-2 left-0 bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg 2xl:inline-flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-lg font-semibold font-['Montserrat'] leading-7">
                     $250
                   </div>
                 </div>
-                <div className="w-auto h-14 px-4 py-2   bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg inline-flex justify-center items-center gap-2">
-                  <div className="text-center justify-start text-tcgreen-dark text-lg font-semibold font-['Montserrat'] leading-7">
+                <div className="w-auto h-14 px-4 py-2 bg-tcgreen-light border-2 border-tcgreen-dark rounded-lg 2xl:inline-flex justify-center items-center gap-2">
+                  <div className="text-center justify-start text-tcgreen-dark 2xl:text-lg font-semibold font-['Montserrat'] leading-7">
                     $100
                   </div>
                 </div>
               </div>
-              <div className="self-stretch h-12 px-4 bg-tcgreen-light border-2 border-tcgreen-dark rounded-[10px] inline-flex justify-start items-center gap-2">
+              <div className="self-stretch h-12 px-4 bg-tcgreen-light border-2 border-tcgreen-dark rounded-[10px] 2xl:inline-flex justify-start items-center gap-2">
                 <div className="w-2 h-6 relative">
-                  <div className=" absolute justify-start text-tcgreen-dark text-base font-normal font-['Montserrat'] leading-6">
+                  <div className="absolute justify-start text-tcgreen-dark 2xl:text-base font-normal font-['Montserrat'] leading-6">
                     $
                   </div>
                 </div>
-                <div className="flex-1 h-6 flex justify-start items-center overflow-hidden">
+                <div className="2xl:flex-1 h-6 2xl:flex justify-start items-center overflow-hidden">
                   <input
                     type="number"
                     placeholder="Other"
-                    className="justify-center text-black/50 text-base font-normal font-['Montserrat']"
+                    className="justify-center text-black/50 2xl:text-base font-normal font-['Montserrat']"
                   />
                 </div>
                 <div className="w-8 h-6 relative">
-                  <div className="left-0  absolute justify-start text-gray-500 text-base font-normal font-['Montserrat'] leading-6">
+                  <div className="left-0 absolute justify-start text-gray-500 2xl:text-base font-normal font-['Montserrat'] leading-6">
                     USD
                   </div>
                 </div>
               </div>
-              <div className="self-stretch h-12 flex flex-col justify-start items-start gap-3">
-                <div className="self-stretch h-5 inline-flex justify-start items-center gap-3">
-                  <div className="h-5 flex justify-start items-start gap-2">
+              <div className="self-stretch h-12 2xl:flex 2xl:flex-col justify-start items-start gap-3">
+                <div className="self-stretch h-5 2xl:inline-flex justify-start items-center gap-3">
+                  <div className="h-5 2xl:flex justify-start items-start gap-2">
                     <input type="checkbox" className="w-5 h-5" />
-                    <div className="justify-start text-tcgreen-dark text-sm font-medium font-['Montserrat'] leading-5">
+                    <div className="justify-start text-tcgreen-dark 2xl:text-sm font-medium font-['Montserrat'] leading-5">
                       Add note/comment
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch h-5 inline-flex justify-start items-center gap-3">
-                  <div className="h-5 flex justify-start items-start gap-2">
+                <div className="self-stretch h-5 2xl:inline-flex justify-start items-center gap-3">
+                  <div className="h-5 2xl:flex justify-start items-start gap-2">
                     <input type="checkbox" className="w-5 h-5" />
-                    <div className="justify-start text-tcgreen-dark text-sm font-medium font-['Montserrat'] leading-5">
+                    <div className="justify-start text-tcgreen-dark 2xl:text-sm font-medium font-['Montserrat'] leading-5">
                       Give in honor/memory
                     </div>
                   </div>
                 </div>
               </div>
               <button className="self-stretch h-12 relative bg-tcteal-dark rounded-lg">
-                <div className="text-center justify-start text-tcteal-light text-xl font-semibold font-['Montserrat'] leading-5">
+                <div className="text-center justify-start text-tcteal-light 2xl:text-xl font-semibold font-['Montserrat'] leading-5">
                   Continue
                 </div>
               </button>
             </div>
           </motion.div>
           <motion.div
-            className="flex-1 w-3/4 h-full inline-flex flex-col justify-center items-end gap-8"
+            className="2xl:flex-1 w-3/4 h-full 2xl:inline-flex 2xl:flex-col justify-center items-end gap-8"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-3/4 flex flex-col justify-center items-end gap-2.5">
-              <div className="text-right justify-center items-center text-lime-500 text-8xl font-black font-['Montserrat_Alternates'] leading-16 tracking-tighter">
+            <div className="w-3/4 2xl:flex 2xl:flex-col justify-center items-end gap-2.5">
+              <div className="text-right justify-center items-center text-lime-500 2xl:text-8xl font-black font-['Montserrat_Alternates'] leading-16 tracking-tighter">
                 {introText.map((word, index) => (
                   <motion.span
                     key={index}
@@ -169,8 +169,8 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="w-1/2 flex justify-center items-center gap-2.5">
-              <div className="flex-1 text-right justify-start text-white text-2xl font-semibold font-['Montserrat'] leading-7">
+            <div className="w-1/2 2xl:flex justify-center items-center gap-2.5">
+              <div className="2xl:flex-1 text-right justify-start text-white 2xl:text-2xl font-semibold font-['Montserrat'] leading-7">
                 Professional studios, equipment, and media education — open to
                 everyone in our community.
               </div>
@@ -180,10 +180,10 @@ export default function Home() {
       </div>
 
       {/* Practical media learning section */}
-      <div className="w-full min-h-screen px-32 relative flex flex-rows justify-start items-start gap-20 bg-[url('/classes.jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcteal-dark/75 absolute px-20 py-36  inset-0 flex flex-col">
+      <div className="w-full min-h-screen px-32 relative 2xl:flex 2xl:flex-rows justify-start items-start gap-20 bg-[url('/classes.jpg')] bg-cover bg-center snap-start snap-always">
+        <div className="bg-tcteal-dark/75 absolute px-20 py-36 inset-0 2xl:flex 2xl:flex-col">
           <motion.div
-            className="w-1/2 justify-center text-tcteal text-9xl font-black font-['Montserrat_Alternates'] leading-20 pt-10 tracking-tighter"
+            className="w-1/2 justify-center text-tcteal 2xl:text-9xl font-black font-['Montserrat_Alternates'] leading-20 pt-10 tracking-tighter"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -191,9 +191,9 @@ export default function Home() {
           >
             Practical Media Learning
           </motion.div>
-          <div className="flex-1 inline-flex flex-col justify-end items-end gap-2.5">
+          <div className="2xl:flex-1 2xl:inline-flex 2xl:flex-col justify-end items-end gap-2.5">
             <motion.div
-              className="w-1/2 justify-center text-tcteal text-3xl font-medium font-['Montserrat'] leading-9"
+              className="w-1/2 justify-center text-tcteal 2xl:text-3xl font-medium font-['Montserrat'] leading-9"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -223,7 +223,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <div className="size-86 absolute left-4 top-0 rotate-30 justify-center items-center text-tcteal-dark text-7xl font-extrabold font-['Montserrat'] leading-12 tracking-tighter flex overflow-hidden">
+              <div className="size-86 absolute left-4 top-0 rotate-30 justify-center items-center text-tcteal-dark 2xl:text-7xl font-extrabold font-['Montserrat'] leading-12 tracking-tighter 2xl:flex overflow-hidden">
                 Learn
                 <br />
                 Today!
@@ -241,24 +241,24 @@ export default function Home() {
       </div>
 
       {/* Bring your ideas section */}
-      <div className="w-full min-h-screen px-32 relative flex flex-col justify-start items-start gap-20 bg-[url('/11062b_1c981f2b105f45f0b1af4c785a8fa074~mv2(1).jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcgreen-dark/75 absolute px-20 py-36  inset-0 flex flex-rows">
+      <div className="w-full min-h-screen px-32 relative 2xl:flex 2xl:flex-col justify-start items-start gap-20 bg-[url('/11062b_1c981f2b105f45f0b1af4c785a8fa074~mv2(1).jpg')] bg-cover bg-center snap-start snap-always">
+        <div className="bg-tcgreen-dark/75 absolute px-20 py-36 inset-0 2xl:flex 2xl:flex-rows">
           <motion.div
-            className="w-1/2 flex flex-col gap-4 justify-center text-tcgreen text-8xl font-black font-['Montserrat_Alternates'] capitalize leading-18 tracking-tighter"
+            className="w-1/2 2xl:flex 2xl:flex-col gap-4 justify-center text-tcgreen 2xl:text-8xl font-black font-['Montserrat_Alternates'] capitalize leading-18 tracking-tighter"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ amount: 0.8 }}
           >
             Bring your ideas to life with TCMedia!
-            <div className="justify-start text-tcgreen text-3xl font-medium font-['Montserrat'] leading-8 tracking-normal">
+            <div className="justify-start text-tcgreen 2xl:text-3xl font-medium font-['Montserrat'] leading-8 tracking-normal">
               Whether you need studio space rental, video training, or
               professional editing, our team is here to help. Wemake the process
               easy, friendly, and budget-friendly so you can focus on creating.
               Fill out the form below to get started today!
             </div>
           </motion.div>
-          <div className="w-1/2 overflow-hidden flex justify-center items-center relative z-10">
+          <div className="w-1/2 overflow-hidden 2xl:flex justify-center items-center relative z-10">
             {wowCircle("Inquire Now!", "green", false, 100)}
           </div>
           <motion.div
@@ -274,10 +274,10 @@ export default function Home() {
       </div>
 
       {/* Volunteer callout section */}
-      <div className="w-full min-h-screen p-32 relative flex flex-col justify-start items-start gap-20 bg-[url('/Volunteer.jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcteal/75 absolute px-20 py-36  inset-0 flex flex-col">
-          <div className="w-full inline-flex justify-end items-start gap-2.5 py-8">
-            <div className="w-1/2 text-right justify-center text-tcteal-dark text-2xl items-center font-medium font-['Montserrat'] leading-6">
+      <div className="w-full min-h-screen p-32 relative 2xl:flex 2xl:flex-col justify-start items-start gap-20 bg-[url('/Volunteer.jpg')] bg-cover bg-center snap-start snap-always">
+        <div className="bg-tcteal/75 absolute px-20 py-36 inset-0 2xl:flex 2xl:flex-col">
+          <div className="w-full 2xl:inline-flex justify-end items-start gap-2.5 py-8">
+            <div className="w-1/2 text-right justify-center text-tcteal-dark 2xl:text-2xl items-center font-medium font-['Montserrat'] leading-6">
               Whether you need studio space rental, video training, or
               professional editing, our team is here to help. We make the
               process easy, friendly, and budget-friendly so you can focus on
@@ -297,7 +297,7 @@ export default function Home() {
             {" "}
           </motion.div>
           <motion.div
-            className="w-1/2 flex flex-col gap-4 justify-center text-tcteal-light font-black font-['Montserrat_Alternates'] text-9xl capitalize leading-none tracking-tighter absolute left-10 top-1/2 transform -translate-y-1/2"
+            className="w-1/2 2xl:flex 2xl:flex-col gap-4 justify-center text-tcteal-light font-black font-['Montserrat_Alternates'] 2xl:text-9xl capitalize leading-none tracking-tighter absolute left-10 top-1/2 transform -translate-y-1/2"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -314,9 +314,9 @@ export default function Home() {
       />
 
       {/* Facilities highlight section */}
-      <div className="w-full min-h-screen h-96 px-44 py-36 relative flex flex-col justify-start items-start gap-6 bg-[url('/Controlroom.jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcgreen-dark/80 w-full inset-0 flex flex-col h-full justify-start items-start gap-6 absolute z-10">
-          <motion.div className="text-tcgreen text-5xl font-medium font-['Montserrat'] leading-10 ps-140 pe-96 pt-64 tracking-normal"
+      <div className="w-full min-h-screen h-96 px-44 py-36 relative 2xl:flex 2xl:flex-col justify-start items-start gap-6 bg-[url('/Controlroom.jpg')] bg-cover bg-center snap-start snap-always">
+        <div className="bg-tcgreen-dark/80 w-full inset-0 2xl:flex 2xl:flex-col h-full justify-start items-start gap-6 absolute z-10">
+          <motion.div className="text-tcgreen 2xl:text-5xl font-medium font-['Montserrat'] leading-10 ps-140 pe-96 pt-64 tracking-normal"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -326,8 +326,8 @@ export default function Home() {
             live broadcasts.
           </motion.div>
         </div>
-        <div className="w-full h-full relative items-end justify-end flex flex-col gap-2 z-20">
-          <motion.div className="w-3/4 justify-end text-tcgreen text-[175px] font-black font-['Montserrat']  leading-28 tracking-tighter"
+        <div className="w-full h-full relative items-end justify-end 2xl:flex 2xl:flex-col gap-2 z-20">
+          <motion.div className="w-3/4 justify-end text-tcgreen 2xl:text-[175px] font-black font-['Montserrat'] leading-28 tracking-tighter"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -352,10 +352,10 @@ export default function Home() {
         />
       </div>
       {/* Membership promotion section */}
-      <div className="w-full min-h-screen p-32 relative flex flex-row justify-start items-start gap-20 bg-[url('/Membership.jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcteal-dark/75 absolute px-20 py-36 w-full inset-0 flex flex-row">
+      <div className="w-full min-h-screen p-32 relative 2xl:flex 2xl:flex-row justify-start items-start gap-20 bg-[url('/Membership.jpg')] bg-cover bg-center snap-start snap-always">
+        <div className="bg-tcteal-dark/75 absolute px-20 py-36 w-full inset-0 2xl:flex 2xl:flex-row">
           <div className="w-full justify-start items-start gap-2.5 py-8">
-            <div className="w-3/4 text-left justify-start text-tcteal text-3xl items-center font-medium font-['Montserrat'] leading-7">
+            <div className="w-3/4 text-left justify-start text-tcteal 2xl:text-3xl items-center font-medium font-['Montserrat'] leading-7">
               Gain exclusive access to our state-of-the-art production
               facilities, professional equipment,
               and hands-on training to bring your projects to life. Whether
@@ -363,12 +363,12 @@ export default function Home() {
               TCMedia is here to support your media journey.
             </div>
 
-            <div className="flex flex-row w-full">
+            <div className="2xl:flex 2xl:flex-row w-full">
               <div className="w-full relative">
                 {wowCircle("Join!", "teal", true, 75)}
               </div>
               <motion.div
-                className="text-tcteal font-black font-['Montserrat_Alternates'] text-9xl capitalize leading-none tracking-tighter transform flex justify-center items-center absolute left-1/2 top-5/8 -translate-x-1/2 -translate-y-1/2 z-50"
+                className="text-tcteal font-black font-['Montserrat_Alternates'] 2xl:text-9xl capitalize leading-none tracking-tighter transform 2xl:flex justify-center items-center absolute left-1/2 top-5/8 -translate-x-1/2 -translate-y-1/2 z-50"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}

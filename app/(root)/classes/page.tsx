@@ -11,7 +11,7 @@ const ClassesPage = () => {
   return (
     <>
       <Title name="Classes" />
-      <div className="bg-tcgreen-light self-stretch inline-flex justify-start items-start gap-2.5">
+      <div className="bg-tcgreen-light self-stretch 2xl:inline-flex justify-start items-start gap-2.5">
       <Upcoming />
 
       </div>

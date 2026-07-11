@@ -1,27 +1,29 @@
 import Image from "next/image";
+import FootMenu from "./footMenu";
+
 const Footer = () => {
   return (
-    <footer className="w-full min-h-screen p-8 flex flex-col justify-center items-start gap-8 snap-start snap-always">
-      <div className="w-full px-4 py-8 bg-tcteal rounded-xl long-shadow-teal-dark border-4 border-tcteal-dark flex flex-col justify-start items-start gap-9">
-        <div className="self-stretch inline-flex justify-start items-center gap-12">
-          <div className="relative w-2/4 h-20 flex justify-center items-center">
-          <div className="justify-start text-tcteal-light text-6xl font-medium font-['Montserrat'] leading-10 absolute w-full" 
-          style={{
-            WebkitTextFillColor: "white",
-            WebkitTextStrokeWidth: "4px",
-            WebkitTextStrokeColor: "#002828",
-            }}
->
-          Thurston Community Media
+    <footer className="2xl:flex w-full min-h-screen 2xl:flex-col items-start justify-center gap-6 px-3 py-6 sm:gap-8 sm:p-6 lg:p-8 snap-start snap-always">
+      <div className="2xl:flex w-full 2xl:flex-col items-start justify-start gap-7 rounded-xl border-4 border-tcteal-dark bg-tcteal px-3 py-6 sm:gap-9 sm:px-4 sm:py-8 long-shadow-teal-dark">
+        <div className="self-stretch 2xl:flex flex-col 2xl:flex-row justify-start items-start lg:items-center gap-8 lg:gap-12">
+          <div className="relative 2xl:flex h-16 w-full lg:w-2/4 justify-center items-center sm:h-20">
+            <div className="absolute w-full justify-start text-tcteal-light lg:text-3xl xl:text-5xl 2xl:text-6xl font-medium font-['Montserrat'] leading-tight tracking-tighter"
+              style={{
+                WebkitTextFillColor: "white",
+                WebkitTextStrokeWidth: "4px",
+                WebkitTextStrokeColor: "#002828",
+              }}
+            >
+              Thurston Community Media
+            </div>
+            <div className="absolute w-full justify-start text-tcteal-light md:text-3xl xl:text-5xl 2xl:text-6xl font-medium font-['Montserrat'] leading-tight tracking-tighter" >
+              Thurston Community Media
+            </div>
           </div>
-          <div className="justify-start text-tcteal-light text-6xl font-medium font-['Montserrat'] leading-10 absolute w-full" >
-          Thurston Community Media
-          </div>
-          </div>
-          <div className="flex-1 inline-flex flex-col justify-center items-end gap-4">
-            <div className="inline-flex justify-start items-center gap-4">
+          <div className="2xl:flex 2xl:flex-1 2xl:flex-col justify-center items-start lg:items-end gap-4 w-full">
+            <div className="2xl:flex w-full  2xl:flex-row justify-start items-start sm:items-center gap-3 sm:gap-4">
               <div
-                className="h-12 px-4 py-3 bg-slate-100 border-b border-red-500 flex justify-start items-center gap-2"
+                className="2xl:flex h-12 w-full sm:w-auto px-4 py-3 bg-tcteal-light border-b border-red-500 justify-start items-center gap-2"
               >
                 <div data-svg-wrapper className="relative">
                   <svg
@@ -37,15 +39,15 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-                <div className="justify-start text-zinc-500 text-base font-normal font-['Montserrat'] leading-6">
+                <div className="justify-start text-zinc-500 2xl:text-base font-normal font-['Montserrat'] leading-6">
                   Enter your email to get the latest news...
                 </div>
               </div>
               <div
-                className="h-12 px-3 py-4 bg-tcgreen border-2 border-tcgreen flex justify-center items-center"
+                className="h-12 px-3 py-4 bg-tcgreen border-2 border-tcgreen 2xl:flex justify-center items-center"
               >
-                <div className="px-4 flex justify-center items-center gap-2.5">
-                  <div className="justify-start text-gray-900 text-base font-medium font-['Montserrat'] leading-4 tracking-wide">
+                <div className="px-4 2xl:flex justify-center items-center gap-2.5">
+                  <div className="justify-start text-gray-900 2xl:text-base font-medium font-['Montserrat'] leading-4 tracking-wide">
                     Subscribe
                   </div>
                 </div>
@@ -54,68 +56,70 @@ const Footer = () => {
           </div>
         </div>
         <div className="self-stretch h-px bg-tcteal-dark" />
-        <div className="w-full flex flex-row content-center items-center gap-4">
-          <div className="w-full flex flex-col justify-start items-start gap-2">
+        <div className="w-full 2xl:flex  2xl:flex-row content-center items-start xl:items-center gap-6">
+          {/* <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-col justify-start items-start gap-2">
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Home
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Classes
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Services
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Facilities
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-start items-start gap-2">
+          <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-col justify-start items-start gap-2">
             <div
-              className="flex justify-start items-center gap-2"
+              className="2xl:flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Volunteer
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Membership
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 Events
               </div>
             </div>
             <div
-              className="inline-flex justify-start items-center gap-2"
+              className="2xl:inline-flex justify-start items-center gap-2"
             >
-              <div className="justify-start text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-6">
+              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
                 About
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-end items-center gap-2.5">
+          </div> */}
+          <FootMenu />
+
+          <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-row justify-start xl:justify-end items-start sm:items-center gap-3">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8020138114125!2d-122.94866429999999!3d47.0441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549174fd39e09fa7%3A0x2695135b767f778d!2sTCMedia%20-%20Thurston%20Community%20Media!5e0!3m2!1sen!2sus!4v1779427404149!5m2!1sen!2sus"
               width="228"
@@ -126,583 +130,31 @@ const Footer = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
 
-            <div className="w-56 text-right justify-center">
-              <span className="text-tcteal-dark text-3xl font-bold font-['Montserrat'] leading-7">
+          </div>
+            <div className="w-128 text-left justify-center">
+              <span className="text-tcteal-dark 2xl:text-3xl font-bold font-['Montserrat'] leading-7">
                 440 Yauger Way SW Olympia, WA
               </span>
-              <span className="text-tcteal-dark text-lg font-bold font-['Montserrat'] leading-4">
+              <span className="text-tcteal-dark 2xl:text-lg font-bold font-['Montserrat'] leading-4">
                 {" "}
               </span>
-              <span className="text-tcteal-dark text-2xl font-bold font-['Montserrat'] leading-5">
+              <span className="text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-5">
                 360.956.3100
               </span>
             </div>
-          </div>
-          <div className="w-full flex flex-col justify-start items-start gap-6">
-            <div className="flex flex-col justify-start items-start gap-4">
+          <div className="w-full xl:w-1/3 2xl:flex 2xl:flex-col justify-start items-start gap-6">
+            <div className="2xl:flex 2xl:flex-col justify-start items-start gap-4">
               <div
-                className="py-3 inline-flex justify-start items-center gap-2"
+                className="py-3 2xl:inline-flex justify-start items-center gap-2"
               >
-                <div className="justify-start text-gray-900 text-lg font-bold font-['Roboto'] leading-5">
+                <div className="justify-start text-gray-900 2xl:text-lg font-bold leading-5">
                   Download our App!
                 </div>
               </div>
-              <div className="w-full flex justify-start items-start gap-2">
-                <div
-                  className="w-30 h-10 relative overflow-hidden"
-                >
-                  <div data-svg-wrapper className="left-0 top-0 absolute">
-                    <svg
-                      width="120"
-                      height="40"
-                      viewBox="0 0 120 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M110.135 7.92969e-06H9.53468C9.16798 7.92969e-06 8.80568 7.92975e-06 8.43995 0.00200793C8.1338 0.00400793 7.83009 0.00981793 7.521 0.0147079C6.84951 0.0226097 6.17961 0.0816842 5.5171 0.191418C4.85552 0.303541 4.21467 0.514924 3.61622 0.818418C3.0185 1.12448 2.47235 1.52218 1.99757 1.99708C1.5203 2.47064 1.12246 3.01802 0.81935 3.61817C0.5154 4.21712 0.304641 4.85895 0.19435 5.52149C0.0830109 6.18319 0.0230984 6.85253 0.01515 7.52349C0.00587 7.83009 0.00489 8.13771 0 8.44435V31.5586C0.00489 31.8691 0.00587 32.1699 0.01515 32.4805C0.0231008 33.1514 0.0830134 33.8207 0.19435 34.4824C0.304336 35.1453 0.515108 35.7875 0.81935 36.3867C1.12233 36.9849 1.52022 37.5301 1.99757 38.001C2.47054 38.478 3.01705 38.876 3.61622 39.1797C4.21467 39.484 4.85545 39.6967 5.5171 39.8105C6.17972 39.9194 6.84956 39.9785 7.521 39.9873C7.83009 39.9941 8.1338 39.998 8.43995 39.998C8.80567 40 9.168 40 9.53468 40H110.135C110.494 40 110.859 40 111.219 39.998C111.523 39.998 111.836 39.9941 112.141 39.9873C112.811 39.9789 113.479 39.9198 114.141 39.8105C114.804 39.6959 115.448 39.4833 116.049 39.1797C116.647 38.8758 117.193 38.4779 117.666 38.001C118.142 37.5282 118.541 36.9835 118.848 36.3867C119.15 35.7871 119.358 35.145 119.467 34.4824C119.578 33.8206 119.64 33.1515 119.652 32.4805C119.656 32.1699 119.656 31.8691 119.656 31.5586C119.664 31.1953 119.664 30.834 119.664 30.4648V9.53614C119.664 9.16993 119.664 8.80665 119.656 8.44435C119.656 8.13771 119.656 7.83009 119.652 7.52345C119.64 6.85243 119.578 6.18324 119.467 5.52145C119.358 4.85929 119.149 4.21751 118.848 3.61813C118.23 2.4152 117.252 1.43603 116.049 0.818328C115.448 0.515575 114.804 0.304248 114.141 0.191328C113.48 0.0811107 112.811 0.0220157 112.141 0.0145679C111.836 0.00968793 111.523 0.00382793 111.219 0.00187793C110.859 -0.00012207 110.494 -0.00012207 110.135 -0.00012207V7.92969e-06Z"
-                        fill="#A6A6A6"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[0.87px] top-[0.88px] absolute"
-                  >
-                    <svg
-                      width="118"
-                      height="39"
-                      viewBox="0 0 118 39"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.57182 38.25C7.26714 38.25 6.96982 38.2461 6.66753 38.2393C6.04131 38.2311 5.41656 38.1766 4.79839 38.0762C4.22198 37.9769 3.66359 37.7923 3.14165 37.5283C2.62449 37.2665 2.1528 36.9233 1.74465 36.5117C1.33059 36.105 0.985867 35.6332 0.72414 35.1152C0.459529 34.5938 0.276403 34.0349 0.18114 33.458C0.0782644 32.8381 0.0226044 32.2113 0.01464 31.583C0.00830003 31.3721 0 30.6699 0 30.6699V7.56934C0 7.56934 0.00884004 6.87793 0.01469 6.6748C0.0223159 6.04748 0.0776522 5.42165 0.18022 4.80273C0.275659 4.22425 0.458927 3.66375 0.72368 3.14063C0.984445 2.62294 1.32725 2.15086 1.73882 1.74268C2.14992 1.33062 2.62312 0.985604 3.14116 0.72021C3.6619 0.457094 4.21924 0.273733 4.79448 0.17627C5.41468 0.0748361 6.0416 0.0199961 6.66999 0.01221L7.57231 0H110.341L111.254 0.0127C111.877 0.0200992 112.498 0.07445 113.112 0.17529C113.693 0.273975 114.257 0.458616 114.783 0.72314C115.821 1.25799 116.666 2.10416 117.198 3.14307C117.459 3.66258 117.639 4.21851 117.733 4.79199C117.837 5.41599 117.895 6.04674 117.907 6.6792C117.91 6.9624 117.91 7.2666 117.91 7.56934C117.918 7.94434 117.918 8.30127 117.918 8.66113V29.5898C117.918 29.9531 117.918 30.3076 117.91 30.665C117.91 30.9902 117.91 31.2881 117.906 31.5947C117.895 32.2159 117.837 32.8354 117.735 33.4482C117.642 34.0293 117.46 34.5925 117.195 35.1182C116.932 35.6306 116.589 36.0983 116.18 36.5039C115.771 36.9177 115.299 37.2629 114.78 37.5264C114.255 37.7924 113.693 37.9777 113.112 38.0762C112.494 38.1772 111.869 38.2317 111.243 38.2393C110.95 38.2461 110.644 38.25 110.346 38.25L109.262 38.252L7.57182 38.25Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[9.97px] top-[13.97px] absolute"
-                  >
-                    <svg
-                      width="18"
-                      height="17"
-                      viewBox="0 0 18 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.7973 6.32767C14.8081 5.49301 15.0298 4.67463 15.4418 3.94868C15.8538 3.22273 16.4428 2.61279 17.1539 2.17561C16.7021 1.53045 16.1062 0.999512 15.4134 0.624959C14.7205 0.250407 13.9499 0.042563 13.1627 0.0179334C11.4835 -0.158327 9.85552 1.02276 8.99981 1.02276C8.12754 1.02276 6.81004 0.0354333 5.39131 0.0646233C4.47364 0.0942714 3.57929 0.361125 2.79541 0.839183C2.01154 1.31724 1.36486 1.9902 0.918393 2.79249C-1.01561 6.14091 0.426982 11.062 2.27959 13.7686C3.20649 15.0939 4.28977 16.5744 5.70722 16.5219C7.09428 16.4643 7.61232 15.6374 9.28662 15.6374C10.9454 15.6374 11.4314 16.5219 12.8776 16.4885C14.366 16.4643 15.3038 15.1573 16.1981 13.8194C16.8641 12.875 17.3766 11.8313 17.7166 10.7268C16.8518 10.3611 16.1139 9.74894 15.5948 8.96664C15.0757 8.18434 14.7983 7.26654 14.7973 6.32767Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[18.79px] top-[8.72px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="6"
-                      viewBox="0 0 5 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.24656 3.49062C4.05808 2.51641 4.45789 1.26423 4.36108 0C3.12124 0.13022 1.97599 0.722779 1.1535 1.65961C0.751355 2.11728 0.443358 2.64971 0.247113 3.22648C0.0508674 3.80325 -0.0297775 4.41304 0.00978708 5.021C0.629926 5.02739 1.24343 4.89297 1.80409 4.62788C2.36476 4.3628 2.85796 3.97395 3.24656 3.49062Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[34.43px] top-[18.08px] absolute"
-                  >
-                    <svg
-                      width="12"
-                      height="13"
-                      viewBox="0 0 12 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.875 9.06155H3.1416L2.00488 12.418H0L4.4834 0H6.5664L11.0498 12.418H9.01073L7.875 9.06155ZM3.63183 7.51272H7.38383L5.53422 2.06545H5.48246L3.63183 7.51272Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[46.63px] top-[21.35px] absolute"
-                  >
-                    <svg
-                      width="9"
-                      height="13"
-                      viewBox="0 0 9 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.52835 4.62375C8.52835 7.43723 7.02249 9.24484 4.75003 9.24484C4.17438 9.27495 3.60188 9.14235 3.09808 8.86221C2.59429 8.58207 2.17957 8.16572 1.9014 7.66084H1.8584V12.1452H0V0.0963995H1.79886V1.60226H1.83304C2.12399 1.09979 2.54572 0.685603 3.05335 0.403757C3.56098 0.121911 4.13553 -0.0170459 4.71585 0.00166915C7.01366 0.00167915 8.52835 1.81808 8.52835 4.62375ZM6.61819 4.62375C6.61819 2.79075 5.67092 1.58566 4.22561 1.58566C2.80569 1.58566 1.85061 2.81613 1.85061 4.62375C1.85061 6.44797 2.80569 7.66965 4.22561 7.66965C5.67093 7.66965 6.61819 6.47336 6.61819 4.62375Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[56.60px] top-[21.35px] absolute"
-                  >
-                    <svg
-                      width="9"
-                      height="13"
-                      viewBox="0 0 9 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.52835 4.62374C8.52835 7.43722 7.02249 9.24483 4.75003 9.24483C4.17438 9.27494 3.60188 9.14234 3.09808 8.8622C2.59429 8.58206 2.17957 8.16572 1.9014 7.66083H1.8584V12.1452H0V0.0963905H1.79882V1.60225H1.833C2.12396 1.09979 2.54569 0.685596 3.05332 0.403752C3.56095 0.121908 4.1355 -0.0170482 4.71582 0.00166964C7.0137 0.00166964 8.52835 1.81807 8.52835 4.62374ZM6.61819 4.62374C6.61819 2.79074 5.67092 1.58565 4.22561 1.58565C2.80569 1.58565 1.85061 2.81612 1.85061 4.62374C1.85061 6.44796 2.80569 7.66964 4.22561 7.66964C5.67093 7.66964 6.6182 6.47335 6.6182 4.62374H6.61819Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[69.81px] top-[17.87px] absolute"
-                  >
-                    <svg
-                      width="10"
-                      height="13"
-                      viewBox="0 0 10 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.90237 9.16509C2.04007 10.3965 3.23637 11.2051 4.87112 11.2051C6.43753 11.2051 7.56448 10.3965 7.56448 9.28614C7.56448 8.32227 6.88479 7.74514 5.27542 7.34962L3.66605 6.96192C1.38578 6.41114 0.327179 5.34473 0.327179 3.61426C0.327179 1.47168 2.19437 0 4.84573 0C7.46973 0 9.26858 1.47168 9.32913 3.61426H7.45313C7.34083 2.375 6.31641 1.62696 4.81934 1.62696C3.32227 1.62696 2.29786 2.3838 2.29786 3.48536C2.29786 4.36329 2.95216 4.87989 4.55274 5.27536L5.9209 5.6113C8.46875 6.21384 9.52735 7.2373 9.52735 9.05368C9.52735 11.3769 7.67676 12.832 4.7334 12.832C1.97949 12.832 0.12012 11.4111 0 9.165L1.90237 9.16509Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[80.16px] top-[19.30px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="12"
-                      viewBox="0 0 5 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.18359 0V2.14258H4.90527V3.61426H3.18359V8.60547C3.18359 9.38086 3.52832 9.74219 4.28515 9.74219C4.48954 9.73863 4.6936 9.72427 4.89648 9.69919V11.1621C4.55621 11.2257 4.21035 11.2545 3.86425 11.248C2.03125 11.248 1.3164 10.5595 1.3164 8.80368V3.61426H0V2.14258H1.31638V0H3.18359Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[86.07px] top-[21.33px] absolute"
-                  >
-                    <svg
-                      width="9"
-                      height="10"
-                      viewBox="0 0 9 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 4.63867C0 1.79004 1.67773 0 4.29395 0C6.91895 0 8.58887 1.79 8.58887 4.63867C8.58887 7.49512 6.92774 9.27734 4.29395 9.27734C1.66109 9.27734 0 7.49511 0 4.63867ZM6.6953 4.63867C6.6953 2.68457 5.7998 1.53125 4.29394 1.53125C2.78808 1.53125 1.89355 2.69336 1.89355 4.63867C1.89355 6.60058 2.78808 7.74512 4.29394 7.74512C5.7998 7.74512 6.69527 6.60058 6.69527 4.63867H6.6953Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[96.19px] top-[21.35px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="10"
-                      viewBox="0 0 5 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.62939e-06 0.0963152H1.77247V1.63731H1.81547C1.93539 1.15603 2.21734 0.730697 2.61393 0.432812C3.01052 0.134926 3.49756 -0.017352 3.9932 0.0015734C4.20737 0.000825633 4.42094 0.0240858 4.62992 0.0709151V1.80919C4.35955 1.72658 4.07751 1.68864 3.79492 1.69689C3.52495 1.68594 3.25579 1.73354 3.00595 1.83643C2.75611 1.93932 2.53149 2.09505 2.34751 2.29294C2.16354 2.49083 2.02457 2.72619 1.94014 2.98286C1.85571 3.23953 1.82782 3.51143 1.8584 3.77989V9.15001H0L7.62939e-06 0.0963152Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[101.22px] top-[21.33px] absolute"
-                  >
-                    <svg
-                      width="9"
-                      height="10"
-                      viewBox="0 0 9 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.16699 6.50586C7.91699 8.14941 6.3164 9.27734 4.26855 9.27734C1.63476 9.27734 0 7.51269 0 4.68164C0 1.8418 1.64355 0 4.19043 0C6.69531 0 8.27052 1.7207 8.27052 4.46582V5.10254H1.87598V5.21484C1.84647 5.54804 1.88818 5.88371 1.99836 6.19955C2.10854 6.51539 2.28466 6.80417 2.51501 7.04672C2.74537 7.28927 3.02469 7.48003 3.33443 7.60633C3.64418 7.73264 3.97725 7.79159 4.31153 7.77929C4.75069 7.82044 5.1914 7.71873 5.56812 7.48929C5.94483 7.25985 6.23741 6.91493 6.40235 6.50585L8.16699 6.50586ZM1.88477 3.80371H6.41113C6.42782 3.50411 6.3824 3.2043 6.27772 2.92309C6.17304 2.64188 6.01136 2.38535 5.80284 2.16958C5.59432 1.95381 5.34345 1.78348 5.06598 1.66926C4.78851 1.55505 4.49042 1.49941 4.19043 1.50586C3.8878 1.50405 3.5878 1.5622 3.30776 1.67694C3.02772 1.79168 2.77317 1.96075 2.55882 2.17438C2.34446 2.38802 2.17453 2.64199 2.05884 2.92164C1.94315 3.20129 1.88399 3.50108 1.88477 3.80372V3.80371Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[35.67px] top-[8.72px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="6"
-                      viewBox="0 0 5 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.15527 0.00677081C2.54488 -0.0211884 2.93585 0.0376716 3.29996 0.179105C3.66407 0.320537 3.99226 0.541018 4.26084 0.824643C4.52943 1.10827 4.73172 1.44797 4.85312 1.81924C4.97452 2.19051 5.01201 2.5841 4.96289 2.97161C4.96289 4.87786 3.93262 5.97361 2.15527 5.97361H0V0.00677081H2.15527ZM0.92675 5.12977H2.05175C2.33016 5.14641 2.60877 5.10076 2.86731 4.99615C3.12584 4.89154 3.35781 4.73059 3.5463 4.52502C3.73479 4.31946 3.87507 4.07445 3.95694 3.80783C4.0388 3.54121 4.06018 3.25969 4.01952 2.98377C4.05723 2.70894 4.03368 2.42917 3.95056 2.1645C3.86744 1.89984 3.72681 1.65683 3.53875 1.4529C3.35069 1.24897 3.11984 1.08917 2.86276 0.98493C2.60568 0.880693 2.32873 0.83461 2.05175 0.849981H0.92675V5.12977Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[41.67px] top-[10.11px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="5"
-                      viewBox="0 0 5 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.0100451 2.33638C-0.018264 2.04046 0.015589 1.74189 0.109429 1.45982C0.20327 1.17775 0.355025 0.918411 0.554967 0.698429C0.754909 0.478447 0.998624 0.302681 1.27047 0.182405C1.54233 0.06213 1.83631 0 2.13358 0C2.43085 0 2.72484 0.06213 2.99669 0.182405C3.26854 0.302681 3.51225 0.478447 3.71219 0.698429C3.91214 0.918411 4.06389 1.17775 4.15773 1.45982C4.25158 1.74189 4.28542 2.04046 4.25712 2.33638C4.28596 2.6326 4.25251 2.93158 4.15892 3.21411C4.06533 3.49663 3.91366 3.75645 3.71367 3.97686C3.51368 4.19728 3.26978 4.37341 2.99766 4.49395C2.72554 4.61448 2.4312 4.67675 2.13358 4.67675C1.83596 4.67675 1.54163 4.61448 1.2695 4.49395C0.997378 4.37341 0.753484 4.19728 0.553491 3.97686C0.353498 3.75645 0.201831 3.49663 0.108239 3.21411C0.0146471 2.93158 -0.0188012 2.6326 0.0100451 2.33638ZM3.34305 2.33638C3.34305 1.36031 2.90457 0.789509 2.13505 0.789509C1.36259 0.789509 0.928044 1.36031 0.928044 2.33639C0.928044 3.32028 1.36262 3.88668 2.13505 3.88668C2.90459 3.88667 3.34306 3.31636 3.34306 2.33638H3.34305Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[46.57px] top-[10.19px] absolute"
-                  >
-                    <svg
-                      width="7"
-                      height="5"
-                      viewBox="0 0 7 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.0039 4.50293H4.08203L3.15137 1.18652H3.08106L2.1543 4.50293H1.24121L0 0H0.901371L1.70801 3.436H1.77442L2.7002 0H3.55274L4.47852 3.436H4.54883L5.35156 0H6.24023L5.0039 4.50293Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[53.85px] top-[10.10px] absolute"
-                  >
-                    <svg
-                      width="4"
-                      height="5"
-                      viewBox="0 0 4 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.62939e-06 0.0913533H0.855469V0.806682H0.921879C1.03453 0.549762 1.22454 0.33439 1.46541 0.190584C1.70628 0.0467781 1.98602 -0.0182962 2.26563 0.00443254C2.48473 -0.0120404 2.70473 0.0209952 2.90932 0.101091C3.11392 0.181187 3.29788 0.306292 3.44756 0.467135C3.59724 0.627979 3.70882 0.82044 3.77402 1.03026C3.83922 1.24008 3.85638 1.46188 3.82422 1.67923V4.59423H2.93555V1.90239C2.93555 1.17876 2.6211 0.818893 1.96387 0.818893C1.81511 0.811965 1.66661 0.837283 1.52856 0.893113C1.3905 0.948943 1.26615 1.03397 1.16402 1.14235C1.0619 1.25074 0.984417 1.37992 0.93689 1.52105C0.889362 1.66218 0.872912 1.81192 0.888668 1.96V4.59428H0L7.62939e-06 0.0913533Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[59.09px] top-[8.44px] absolute"
-                  >
-                    <svg
-                      width="1"
-                      height="7"
-                      viewBox="0 0 1 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0H0.888672V6.26074H0V0Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[61.21px] top-[10.11px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="5"
-                      viewBox="0 0 5 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.0100202 2.33646C-0.0182672 2.04052 0.0156066 1.74194 0.109469 1.45986C0.203332 1.17778 0.355113 0.918429 0.555076 0.698442C0.755038 0.478454 0.998771 0.302686 1.27064 0.182408C1.54251 0.062131 1.83652 0 2.1338 0C2.43109 0 2.7251 0.062131 2.99697 0.182408C3.26884 0.302686 3.51256 0.478454 3.71253 0.698442C3.91249 0.918429 4.06427 1.17778 4.15813 1.45986C4.25199 1.74194 4.28587 2.04052 4.25758 2.33646C4.28639 2.6327 4.25291 2.93168 4.15929 3.2142C4.06567 3.49673 3.91397 3.75654 3.71396 3.97695C3.51395 4.19736 3.27004 4.37348 2.9979 4.49401C2.72577 4.61454 2.43143 4.67681 2.1338 4.67681C1.83617 4.67681 1.54183 4.61454 1.26969 4.49401C0.99756 4.37348 0.75365 4.19736 0.553637 3.97695C0.353625 3.75654 0.201935 3.49673 0.108313 3.2142C0.0146921 2.93168 -0.0187896 2.6327 0.0100202 2.33646ZM3.34302 2.33646C3.34302 1.36039 2.90454 0.789593 2.13502 0.789593C1.36256 0.789593 0.928023 1.36039 0.928023 2.33647C0.928023 3.32036 1.36259 3.88676 2.13502 3.88676C2.90455 3.88675 3.34303 3.31644 3.34303 2.33646H3.34302Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[66.40px] top-[10.11px] absolute"
-                  >
-                    <svg
-                      width="4"
-                      height="5"
-                      viewBox="0 0 4 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 3.3164C0 2.50585 0.603517 2.03857 1.6748 1.97216L2.89453 1.90185V1.51318C2.89453 1.03759 2.58008 0.76904 1.97266 0.76904C1.47657 0.76904 1.13282 0.95117 1.03418 1.26953H0.173828C0.264648 0.49609 0.992192 0 2.01367 0C3.14258 0 3.7793 0.562001 3.7793 1.51318V4.58984H2.92383V3.95703H2.85352C2.7108 4.18402 2.5104 4.36907 2.27277 4.49328C2.03515 4.61749 1.76882 4.67641 1.50098 4.66403C1.31194 4.68369 1.12089 4.66353 0.940125 4.60483C0.759363 4.54613 0.59291 4.4502 0.451492 4.32323C0.310075 4.19626 0.196837 4.04107 0.119072 3.86765C0.0413071 3.69424 0.000744773 3.50645 0 3.3164ZM2.89453 2.93163V2.55517L1.79492 2.62548C1.1748 2.66698 0.893547 2.87792 0.893547 3.27489C0.893547 3.68016 1.24511 3.916 1.72855 3.916C1.87019 3.93034 2.01327 3.91604 2.14928 3.87395C2.28528 3.83186 2.41143 3.76284 2.52022 3.671C2.629 3.57915 2.7182 3.46637 2.78251 3.33935C2.84681 3.21233 2.88491 3.07367 2.89453 2.93163Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[71.35px] top-[8.44px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="7"
-                      viewBox="0 0 5 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 4.00734C0 2.58449 0.731451 1.68312 1.86914 1.68312C2.15056 1.67015 2.42985 1.73756 2.67438 1.87745C2.9189 2.01735 3.11855 2.22395 3.25 2.47312H3.31641V0H4.20508V6.26074H3.35352V5.54931H3.28321C3.1416 5.7968 2.93499 6.00083 2.68574 6.13932C2.43649 6.2778 2.15409 6.34545 1.86915 6.33495C0.723638 6.335 0 5.43361 0 4.00734ZM0.917999 4.00734C0.917999 4.96242 1.3682 5.53713 2.12113 5.53713C2.87013 5.53713 3.33304 4.95413 3.33304 4.01125C3.33304 3.07277 2.86527 2.48146 2.12113 2.48146C1.37305 2.48146 0.917969 3.06007 0.917969 4.00734H0.917999Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[79.22px] top-[10.11px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="5"
-                      viewBox="0 0 5 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.0100456 2.33638C-0.0182635 2.04046 0.0155857 1.74189 0.109426 1.45982C0.203267 1.17775 0.355026 0.918411 0.554968 0.698429C0.754909 0.478447 0.998617 0.302681 1.27047 0.182405C1.54232 0.06213 1.83631 0 2.13358 0C2.43085 0 2.72484 0.06213 2.99669 0.182405C3.26854 0.302681 3.51224 0.478447 3.71219 0.698429C3.91213 0.918411 4.06389 1.17775 4.15773 1.45982C4.25157 1.74189 4.28542 2.04046 4.25712 2.33638C4.28596 2.6326 4.25251 2.93158 4.15892 3.21411C4.06533 3.49663 3.91366 3.75645 3.71367 3.97686C3.51367 4.19728 3.26978 4.37341 2.99766 4.49395C2.72553 4.61448 2.4312 4.67675 2.13358 4.67675C1.83596 4.67675 1.54162 4.61448 1.2695 4.49395C0.997375 4.37341 0.75348 4.19728 0.553487 3.97686C0.353494 3.75645 0.201828 3.49663 0.108236 3.21411C0.0146438 2.93158 -0.0188007 2.6326 0.0100456 2.33638ZM3.34305 2.33638C3.34305 1.36031 2.90457 0.789509 2.13505 0.789509C1.36259 0.789509 0.928045 1.36031 0.928045 2.33639C0.928045 3.32028 1.36262 3.88668 2.13505 3.88668C2.90458 3.88667 3.34305 3.31636 3.34305 2.33638Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[84.67px] top-[10.10px] absolute"
-                  >
-                    <svg
-                      width="4"
-                      height="5"
-                      viewBox="0 0 4 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0.0913533H0.855469V0.806682H0.921883C1.03454 0.549762 1.22454 0.33439 1.46541 0.190584C1.70628 0.0467781 1.98602 -0.0182962 2.26563 0.00443254C2.48473 -0.0120404 2.70473 0.0209952 2.90932 0.101091C3.11392 0.181187 3.29788 0.306292 3.44756 0.467135C3.59725 0.627979 3.70882 0.82044 3.77402 1.03026C3.83923 1.24008 3.85638 1.46188 3.82422 1.67923V4.59423H2.93555V1.90239C2.93555 1.17876 2.6211 0.818893 1.96387 0.818893C1.81512 0.811965 1.66661 0.837283 1.52856 0.893113C1.3905 0.948943 1.26615 1.03397 1.16402 1.14235C1.0619 1.25074 0.984417 1.37992 0.93689 1.52105C0.889362 1.66218 0.872916 1.81192 0.888672 1.96V4.59428H0V0.0913533Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[91.91px] top-[9.07px] absolute"
-                  >
-                    <svg
-                      width="3"
-                      height="6"
-                      viewBox="0 0 3 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.60449 0V1.1416H2.58009V1.89014H1.60449V4.20557C1.60449 4.67725 1.79883 4.88379 2.24121 4.88379C2.35447 4.88343 2.46761 4.87658 2.58009 4.86328V5.60351C2.4205 5.63206 2.2588 5.64725 2.09668 5.64892C1.1084 5.64892 0.714844 5.30126 0.714844 4.4331V1.8901H0V1.14156H0.714844V0H1.60449Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[95.70px] top-[8.44px] absolute"
-                  >
-                    <svg
-                      width="4"
-                      height="7"
-                      viewBox="0 0 4 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0H0.880859V2.48145H0.951164C1.0693 2.22213 1.26452 2.00554 1.51022 1.86119C1.75591 1.71684 2.04014 1.65176 2.32417 1.67481C2.54213 1.66295 2.76002 1.69934 2.9623 1.78138C3.16457 1.86342 3.34626 1.9891 3.49438 2.14943C3.6425 2.30977 3.75341 2.50082 3.81919 2.70896C3.88498 2.91709 3.90401 3.13718 3.87495 3.35352V6.26075H2.98539V3.57275C2.98539 2.85351 2.65039 2.48925 2.0225 2.48925C1.86976 2.47672 1.71613 2.49772 1.57235 2.55077C1.42857 2.60383 1.29813 2.68766 1.19013 2.79639C1.08214 2.90513 0.999209 3.03615 0.947144 3.18029C0.895078 3.32443 0.875135 3.4782 0.88871 3.63085V6.26073H3.8147e-05L0 0Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[100.71px] top-[10.11px] absolute"
-                  >
-                    <svg
-                      width="5"
-                      height="5"
-                      viewBox="0 0 5 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.05045 3.3741C3.92972 3.78563 3.66811 4.14162 3.31142 4.37977C2.95474 4.61792 2.52567 4.72307 2.09928 4.67683C1.80262 4.68466 1.5078 4.62784 1.2353 4.51031C0.962797 4.39278 0.719135 4.21736 0.521226 3.99622C0.323316 3.77508 0.175903 3.51353 0.0892111 3.2297C0.00251967 2.94588 -0.0213668 2.6466 0.0192038 2.35262C-0.0203012 2.05773 0.00400594 1.7578 0.0904928 1.47313C0.17698 1.18845 0.323626 0.925685 0.520493 0.702612C0.71736 0.479539 0.959857 0.301367 1.23157 0.18016C1.50328 0.0589522 1.79786 -0.00246148 2.09537 7.55166e-05C3.3483 7.55166e-05 4.10416 0.856075 4.10416 2.27008V2.58017H0.92447V2.62997C0.910554 2.79521 0.931328 2.96154 0.985451 3.11829C1.03957 3.27504 1.12585 3.41875 1.23876 3.54021C1.35167 3.66166 1.48872 3.75818 1.64111 3.82358C1.7935 3.88898 1.95787 3.92181 2.12369 3.91997C2.33626 3.94548 2.55162 3.90721 2.74239 3.81C2.93315 3.71279 3.09069 3.56105 3.19498 3.37407L4.05045 3.3741ZM0.924447 1.92293H3.19886C3.21006 1.7718 3.18952 1.62 3.13857 1.47728C3.08761 1.33456 3.00736 1.20408 2.90298 1.09422C2.79859 0.984367 2.67238 0.897562 2.53245 0.839386C2.39252 0.781211 2.24196 0.752952 2.09046 0.756425C1.93676 0.754494 1.78423 0.783352 1.64186 0.841296C1.49949 0.899241 1.37016 0.985101 1.2615 1.09381C1.15283 1.20253 1.06703 1.33189 1.00915 1.47429C0.951266 1.61669 0.922471 1.76923 0.92447 1.92293H0.924447Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  data-brand="Google Play"
-                  data-icon-left="true"
-                  data-icon-right="false"
-                  data-notification="false"
-                  data-sep-left="false"
-                  data-sep-right="false"
-                  data-size="M"
-                  data-style="Outline"
-                  data-text="true"
-                  className="w-32 h-10 relative overflow-hidden"
-                >
-                  <div data-svg-wrapper className="left-0 top-0 absolute">
-                    <svg
-                      width="135"
-                      height="40"
-                      viewBox="0 0 135 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M130 0H5C2.23858 0 0 2.23858 0 5V35C0 37.7614 2.23858 40 5 40H130C132.761 40 135 37.7614 135 35V5C135 2.23858 132.761 0 130 0Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
-                  <div data-svg-wrapper className="left-0 top-0 absolute">
-                    <svg
-                      width="135"
-                      height="40"
-                      viewBox="0 0 135 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M130 0.8C131.114 0.8 132.182 1.2425 132.97 2.03015C133.758 2.8178 134.2 3.88609 134.2 5V35C134.2 36.1139 133.758 37.1822 132.97 37.9698C132.182 38.7575 131.114 39.2 130 39.2H5C3.88609 39.2 2.8178 38.7575 2.03015 37.9698C1.2425 37.1822 0.8 36.1139 0.8 35V5C0.8 3.88609 1.2425 2.8178 2.03015 2.03015C2.8178 1.2425 3.88609 0.8 5 0.8H130ZM130 0H5C3.67392 0 2.40215 0.526784 1.46447 1.46447C0.526784 2.40215 0 3.67392 0 5V35C0 36.3261 0.526784 37.5979 1.46447 38.5355C2.40215 39.4732 3.67392 40 5 40H130C131.326 40 132.598 39.4732 133.536 38.5355C134.473 37.5979 135 36.3261 135 35V5C135 3.67392 134.473 2.40215 133.536 1.46447C132.598 0.526784 131.326 0 130 0Z"
-                        fill="#A6A6A6"
-                      />
-                    </svg>
-                  </div>
-                  <div className="left-10 top-12 absolute justify-start text-white text-[8.38px] font-normal font-['Open_Sans']">
-                    GET IT ON
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[40.87px] top-[17.05px] absolute"
-                  >
-                    <svg
-                      width="85"
-                      height="17"
-                      viewBox="0 0 85 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M27.2671 4.705C26.4245 4.70698 25.6015 4.95876 24.902 5.4285C24.2026 5.89824 23.6581 6.56484 23.3375 7.344C23.0169 8.12317 22.9346 8.97991 23.1009 9.80588C23.2672 10.6319 23.6747 11.39 24.2719 11.9843C24.869 12.5787 25.629 12.9826 26.4558 13.1451C27.2825 13.3075 28.1389 13.2211 28.9165 12.8969C29.6942 12.5726 30.3582 12.0251 30.8247 11.3234C31.2911 10.6218 31.539 9.79755 31.5371 8.955C31.5452 8.39294 31.4402 7.83498 31.2282 7.31435C31.0163 6.79371 30.7017 6.32105 30.3033 5.92451C29.9049 5.52796 29.4308 5.21563 28.9091 5.00613C28.3875 4.79662 27.8291 4.69421 27.2671 4.705ZM27.2671 11.535C26.7506 11.5711 26.2353 11.451 25.788 11.1904C25.3407 10.9297 24.9822 10.5406 24.7591 10.0734C24.5359 9.60633 24.4584 9.08288 24.5367 8.57115C24.615 8.05942 24.8454 7.58308 25.198 7.20404C25.5506 6.825 26.0091 6.5608 26.5138 6.44578C27.0186 6.33076 27.5462 6.37024 28.0282 6.55908C28.5102 6.74793 28.9243 7.07742 29.2166 7.50471C29.5088 7.93199 29.6658 8.43732 29.6671 8.955C29.6832 9.28302 29.6334 9.61093 29.5208 9.91942C29.4081 10.2279 29.2349 10.5107 29.0112 10.7512C28.7875 10.9916 28.518 11.1849 28.2184 11.3195C27.9188 11.4541 27.5954 11.5274 27.2671 11.535ZM17.9471 4.705C17.1045 4.70698 16.2815 4.95876 15.582 5.4285C14.8826 5.89824 14.3381 6.56484 14.0175 7.344C13.6969 8.12317 13.6146 8.97991 13.7809 9.80588C13.9472 10.6319 14.3547 11.39 14.9519 11.9843C15.549 12.5787 16.309 12.9826 17.1358 13.1451C17.9625 13.3075 18.8189 13.2211 19.5965 12.8969C20.3742 12.5726 21.0382 12.0251 21.5047 11.3234C21.9711 10.6218 22.219 9.79755 22.217 8.955C22.2252 8.39294 22.1202 7.83498 21.9082 7.31435C21.6963 6.79371 21.3817 6.32105 20.9833 5.92451C20.5849 5.52796 20.1108 5.21563 19.5891 5.00613C19.0675 4.79662 18.5091 4.69421 17.9471 4.705ZM17.9471 11.535C17.4306 11.5711 16.9153 11.451 16.468 11.1904C16.0207 10.9297 15.6622 10.5406 15.4391 10.0734C15.2159 9.60633 15.1384 9.08288 15.2167 8.57115C15.295 8.05942 15.5254 7.58308 15.878 7.20404C16.2306 6.825 16.6891 6.5608 17.1938 6.44578C17.6986 6.33076 18.2262 6.37024 18.7082 6.55908C19.1902 6.74793 19.6043 7.07742 19.8966 7.50471C20.1888 7.93199 20.3458 8.43732 20.3471 8.955C20.3632 9.28302 20.3134 9.61093 20.2008 9.91942C20.0881 10.2279 19.9149 10.5107 19.6912 10.7512C19.4675 10.9916 19.198 11.1849 18.8984 11.3195C18.5988 11.4541 18.2754 11.5274 17.9471 11.535ZM6.86705 6.015V7.815H11.1871C11.1193 8.66281 10.7669 9.4628 10.1871 10.085C9.75371 10.5265 9.2325 10.8721 8.65716 11.0995C8.08182 11.3269 7.46515 11.431 6.84705 11.405C5.57401 11.405 4.35311 10.8993 3.45294 9.99911C2.55276 9.09894 2.04705 7.87804 2.04705 6.605C2.04705 5.33196 2.55276 4.11106 3.45294 3.21089C4.35311 2.31071 5.57401 1.805 6.84705 1.805C8.0675 1.78685 9.24595 2.25032 10.1271 3.095L11.3971 1.825C10.801 1.23551 10.0934 0.770891 9.31551 0.458373C8.53765 0.145855 7.70524 -0.00827923 6.86705 0.00500023C5.97805 -0.0295976 5.09121 0.115628 4.25967 0.431972C3.42814 0.748316 2.66902 1.22927 2.02781 1.84601C1.3866 2.46275 0.876487 3.20259 0.528046 4.0212C0.179604 4.8398 0 5.72032 0 6.61C0 7.49968 0.179604 8.3802 0.528046 9.1988C0.876487 10.0174 1.3866 10.7572 2.02781 11.374C2.66902 11.9907 3.42814 12.4717 4.25967 12.788C5.09121 13.1044 5.97805 13.2496 6.86705 13.215C7.72247 13.2492 8.57544 13.102 9.36996 12.7832C10.1645 12.4643 10.8826 11.981 11.4771 11.365C12.5272 10.2114 13.0867 8.69418 13.0371 7.135C13.0406 6.75973 13.0105 6.38489 12.9471 6.015H6.86705ZM52.1771 7.415C51.9163 6.64774 51.4286 5.97779 50.7786 5.49385C50.1285 5.00991 49.3469 4.73482 48.5371 4.705C47.9901 4.70393 47.4486 4.81507 46.9463 5.03154C46.4439 5.248 45.9913 5.56521 45.6164 5.96353C45.2415 6.36186 44.9523 6.83285 44.7667 7.34738C44.581 7.86192 44.5029 8.40907 44.5371 8.955C44.5285 9.86785 44.8155 10.759 45.3552 11.4953C45.8948 12.2316 46.6582 12.7735 47.5313 13.0401C48.4044 13.3068 49.3403 13.2838 50.1993 12.9747C51.0582 12.6656 51.7941 12.0869 52.2971 11.325L50.8471 10.325C50.6309 10.6853 50.3243 10.9828 49.9577 11.188C49.5911 11.3933 49.1772 11.4991 48.757 11.495C48.3236 11.5129 47.8949 11.3993 47.5273 11.169C47.1596 10.9388 46.8702 10.6027 46.6971 10.205L52.3871 7.855L52.1771 7.415ZM46.3771 8.835C46.3568 8.52438 46.3987 8.21284 46.5003 7.91862C46.602 7.62439 46.7613 7.35341 46.969 7.12152C47.1766 6.88964 47.4285 6.70152 47.7097 6.56819C47.991 6.43485 48.2961 6.35897 48.6071 6.345C48.9293 6.32533 49.2501 6.40119 49.5294 6.56307C49.8087 6.72494 50.034 6.96564 50.1771 7.255L46.3771 8.835ZM41.757 12.955H43.6271V0.455001H41.757V12.955ZM38.6971 5.655H38.6271C38.3477 5.33686 38.0029 5.08281 37.6163 4.91021C37.2297 4.73762 36.8104 4.65057 36.3871 4.655C35.2942 4.708 34.2637 5.17942 33.509 5.97158C32.7543 6.76374 32.3334 7.8159 32.3334 8.91C32.3334 10.0041 32.7543 11.0563 33.509 11.8484C34.2637 12.6406 35.2942 13.112 36.3871 13.165C36.811 13.1735 37.2316 13.0883 37.6188 12.9154C38.0061 12.7426 38.3503 12.4863 38.6271 12.165H38.6971V12.775C38.6971 14.405 37.8271 15.275 36.4271 15.275C35.9594 15.2647 35.5053 15.1157 35.1225 14.8468C34.7397 14.578 34.4454 14.2014 34.2771 13.765L32.6571 14.435C32.9566 15.1872 33.4773 15.8309 34.1505 16.2808C34.8236 16.7308 35.6174 16.9659 36.4271 16.955C38.6171 16.955 40.4271 15.665 40.4271 12.525V4.955H38.6971V5.655ZM36.5471 11.535C35.8919 11.4942 35.2769 11.2051 34.8274 10.7267C34.3778 10.2482 34.1276 9.61647 34.1276 8.96C34.1276 8.30354 34.3778 7.67176 34.8274 7.19334C35.2769 6.71492 35.8919 6.42585 36.5471 6.385C36.8673 6.39882 37.1815 6.47691 37.4709 6.61464C37.7604 6.75236 38.0191 6.9469 38.2318 7.18668C38.4446 7.42645 38.6069 7.70657 38.7091 8.01036C38.8114 8.31415 38.8515 8.6354 38.827 8.955C38.8543 9.27569 38.8163 9.59859 38.7152 9.90415C38.6141 10.2097 38.4521 10.4916 38.239 10.7328C38.0259 10.974 37.7661 11.1694 37.4752 11.3073C37.1844 11.4452 36.8687 11.5226 36.5471 11.535ZM60.937 0.455001H56.4571V12.955H58.327V8.215H60.937C61.47 8.25329 62.0051 8.18137 62.5091 8.00373C63.013 7.82609 63.4749 7.54653 63.8661 7.18249C64.2572 6.81846 64.5691 6.37774 64.7824 5.88784C64.9957 5.39793 65.1058 4.86933 65.1058 4.335C65.1058 3.80067 64.9957 3.27208 64.7824 2.78217C64.5691 2.29226 64.2572 1.85155 63.8661 1.48751C63.4749 1.12347 63.013 0.843916 62.5091 0.666274C62.0051 0.488632 61.47 0.416713 60.937 0.455001ZM60.937 6.455H58.327V2.195H60.9771C61.2581 2.195 61.5364 2.25035 61.796 2.3579C62.0556 2.46544 62.2915 2.62307 62.4903 2.82179C62.689 3.02051 62.8466 3.25642 62.9542 3.51606C63.0617 3.7757 63.1171 4.05397 63.1171 4.335C63.1171 4.61603 63.0617 4.89431 62.9542 5.15394C62.8466 5.41358 62.689 5.64949 62.4903 5.84821C62.2915 6.04693 62.0556 6.20456 61.796 6.3121C61.5364 6.41965 61.2581 6.475 60.9771 6.475L60.937 6.455ZM72.4771 4.665C71.7961 4.62301 71.1177 4.78155 70.5258 5.12102C69.934 5.46048 69.4546 5.96598 69.147 6.575L70.7971 7.265C70.9638 6.9644 71.214 6.71851 71.5174 6.55703C71.8209 6.39555 72.1646 6.32538 72.507 6.355C72.7444 6.32728 72.985 6.3471 73.2146 6.41333C73.4443 6.47955 73.6584 6.59084 73.8446 6.74071C74.0308 6.89058 74.1852 7.07602 74.299 7.28622C74.4127 7.49642 74.4834 7.72717 74.507 7.965V8.085C73.9057 7.76892 73.2364 7.60416 72.5571 7.605C70.7771 7.605 68.9571 8.605 68.9571 10.425C68.9747 10.8118 69.0698 11.1912 69.2369 11.5405C69.404 11.8899 69.6396 12.2021 69.9297 12.4586C70.2198 12.7151 70.5585 12.9107 70.9256 13.0338C71.2928 13.1569 71.681 13.2049 72.0671 13.175C72.5363 13.201 73.004 13.1017 73.4222 12.8873C73.8405 12.6729 74.1942 12.3511 74.4471 11.955H74.507V12.955H76.3071V8.145C76.3071 5.955 74.647 4.685 72.5171 4.685L72.4771 4.665ZM72.2471 11.515C71.6371 11.515 70.7871 11.205 70.7871 10.455C70.7871 9.455 71.8471 9.115 72.7871 9.115C73.3811 9.10034 73.9682 9.24539 74.4871 9.535C74.4243 10.0781 74.1668 10.58 73.7622 10.9477C73.3577 11.3155 72.8336 11.5241 72.2871 11.535L72.2471 11.515ZM82.8671 4.955L80.7271 10.375H80.667L78.4471 4.955H76.4471L79.777 12.535L77.8771 16.745H79.827L84.9471 4.955H82.8671ZM66.0671 12.955H67.9271V0.455001H66.0671V12.955Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-[10.07px] top-[19.42px] absolute"
-                  >
-                    <svg
-                      width="17"
-                      height="14"
-                      viewBox="0 0 17 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.65 0L0 11.3C0.116343 11.7274 0.329375 12.1223 0.622639 12.4543C0.915903 12.7863 1.28155 13.0464 1.69134 13.2146C2.10113 13.3827 2.54409 13.4544 2.986 13.4242C3.42792 13.3939 3.85697 13.2625 4.24 13.04L16.24 6.12L10.65 0Z"
-                        fill="#EA4335"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-5 top-3.5 absolute"
-                  >
-                    <svg
-                      width="13"
-                      height="12"
-                      viewBox="0 0 13 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11 3L5.82 0L0 5.19L5.84 11.04L10.99 8.04C11.4478 7.79482 11.8305 7.43001 12.0973 6.98446C12.3641 6.53891 12.505 6.02932 12.505 5.51C12.505 4.99068 12.3641 4.48109 12.0973 4.03554C11.8305 3.58999 11.4478 3.22518 10.99 2.98L11 3Z"
-                        fill="#FBBC04"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-3 top-2.5 absolute"
-                  >
-                    <svg
-                      width="12"
-                      height="22"
-                      viewBox="0 0 12 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.0710258 0C0.0181426 0.236203 -0.00536839 0.478033 0.00102613 0.719999V20.72C0.0027714 20.9699 0.0363761 21.2186 0.101027 21.46L11.101 10.46L0.0710258 0Z"
-                        fill="#4285F4"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    className="left-2.5 top-1.5 absolute"
-                  >
-                    <svg
-                      width="17"
-                      height="13"
-                      viewBox="0 0 17 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.76 12.86L16.27 7.35L4.27 0.41C3.81917 0.142 3.30447 0.000373658 2.78 0C2.14736 0.00181305 1.53279 0.211168 1.03061 0.595936C0.528422 0.980703 0.166367 1.51963 0 2.13L10.76 12.86Z"
-                        fill="#34A853"
-                      />
-                    </svg>
-                  </div>
-                </div>
+              <div className="w-full 2xl:flex justify-start items-start gap-2">
               </div>
             </div>
-            <div className="flex flex-col justify-start items-start gap-2">
+            <div className="2xl:flex 2xl:flex-col justify-start items-start gap-2">
               <div
                 data-active="False"
                 data-badge="false"
@@ -711,13 +163,13 @@ const Footer = () => {
                 data-menu-type="Horizontal"
                 data-text="true"
                 data-vertical="False"
-                className="py-3 inline-flex justify-start items-center gap-2"
+                className="py-3 2xl:inline-flex justify-start items-center gap-2"
               >
-                <div className="justify-start text-gray-900 text-lg font-bold font-['Roboto'] leading-5">
+                <div className="justify-start text-gray-900 2xl:text-lg font-bold font-['Roboto'] leading-5">
                   Join Us
                 </div>
               </div>
-              <div className="w-96 inline-flex justify-start items-center gap-4">
+              <div className="w-96 2xl:inline-flex justify-start items-center gap-4">
                 <div data-svg-wrapper className="relative">
                   <svg
                     width="24"
@@ -800,13 +252,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="justify-start text-tcteal-dark text-lg font-bold font-['Montserrat'] leading-4">
+
+        <div className="justify-start text-tcteal-dark 2xl:text-lg font-bold font-['Montserrat'] leading-4">
           TCMedia is a 501(c)(3) non-profit. Your donation is tax deductible.
           EIN: 91-1269977
         </div>
         <div className="self-stretch h-px bg-tcteal-dark" />
-        <div className="self-stretch inline-flex justify-start items-center gap-12">
-          <div className="justify-start text-gray-900 text-sm font-normal font-['Roboto'] leading-5">
+        <div className="self-stretch 2xl:inline-flex justify-start items-center gap-12">
+          <div className="justify-start text-gray-900 2xl:text-sm font-normal leading-5">
             Thurston Community Media @ 2026. All rights reserved.
           </div>
         </div>

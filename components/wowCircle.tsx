@@ -31,7 +31,7 @@ const wowCircle = (
         </svg>
       </motion.div>
       <motion.div
-        className="size-86 absolute left-4 top-0 justify-center items-center text-tcteal-dark text-7xl font-extrabold text-center font-['Montserrat'] leading-12 tracking-tighter flex overflow-hidden"
+        className="size-86 flex items-center place-content-center  text-tcteal-dark 2xl:text-7xl font-extrabold text-center font-['Montserrat'] leading-12 tracking-tighter 2xl:flex overflow-hidden"
         initial={{ scale: 0, rotate: reverse ? -30 : 30 }}
         whileInView={{ scale: 1, rotate: reverse ? 30 : -30 }}
         transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}

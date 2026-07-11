@@ -67,7 +67,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${geistMono.variable} ${montserratAlternates.variable} antialiased`}
     >
-      <body className="flex flex-col gradient-background">
+      <body className="2xl:flex 2xl:flex-col gradient-background font-['Montserrat']">
         <Header />
         {children}
       </body>

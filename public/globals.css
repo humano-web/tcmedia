@@ -75,6 +75,32 @@ body {
     12px 12px 0px var(--color-tcgreen-dark);
 }
 
+.long-shadow-teal-text {
+  text-shadow: 0px 0px 0px var(--color-tcteal),
+    0px 0px 0px var(--color-tcteal),
+    1px 1px 0px var(--color-tcteal),
+    2px 2px 0px var(--color-tcteal),
+    3px 3px 0px var(--color-tcteal),
+    4px 4px 0px var(--color-tcteal),
+    6px 6px 0px var(--color-tcteal),
+    8px 8px 0px var(--color-tcteal),
+    10px 10px 0px var(--color-tcteal),
+    12px 12px 0px var(--color-tcteal);
+}
+
+.long-shadow-dark-teal-text {
+  text-shadow: 0px 0px 0px var(--color-tcteal-dark),
+    0px 0px 0px var(--color-tcteal-dark),
+    1px 1px 0px var(--color-tcteal-dark),
+    2px 2px 0px var(--color-tcteal-dark),
+    3px 3px 0px var(--color-tcteal-dark),
+    4px 4px 0px var(--color-tcteal-dark),
+    6px 6px 0px var(--color-tcteal-dark),
+    8px 8px 0px var(--color-tcteal-dark),
+    10px 10px 0px var(--color-tcteal-dark),
+    12px 12px 0px var(--color-tcteal-dark);
+}
+
 .short-shadow-teal-dark:hover {
   box-shadow: 0px 0px 0px var(--color-tcteal-dark),
     0px 0px 0px var(--color-tcteal-dark),
