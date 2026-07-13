@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <main className="w-full h-screen overflow-y-scroll overflow-x-hidden relative 2xl:inline-flex 2xl:flex-col justify-start items-start snap-mandatory snap-y">
       {/* Donation hero section */}
-      <div className="w-full min-h-screen px-7 pt-52 pb-12 2xl:inline-flex justify-start items-center gap-0 relative bg-[url('/6e18cc_a7b880eb0aab4ad0aee6bedf22d734de~mv2.avif')] bg-cover snap-start snap-always">
-        <div className="bg-tcgreen-dark/60 p-8 absolute left-0 top-0 h-full 2xl:flex justify-center items-center">
+      <div className="w-full min-h-screen px-7 2xl:pt-52 pb-12 flex flex-col 2xl:inline-flex justify-start items-center gap-0 relative bg-center bg-[url('/6e18cc_a7b880eb0aab4ad0aee6bedf22d734de~mv2.avif')] bg-cover snap-start snap-always">
+        <div className="2xl:bg-tcgreen-dark/60 bg-tcgreen-dark/80 p-8 absolute left-0 top-0 h-full flex flex-col-reverse 2xl:flex-row justify-center items-center">
           <motion.div
-            className="w-1/4 h-full 2xl:flex 2xl:flex-col justify-center items-center gap-2"
+            className="hidden 2xl:w-1/4 h-full 2xl:flex 2xl:flex-col justify-center items-center gap-2"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -149,13 +149,13 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            className="2xl:flex-1 w-3/4 h-full 2xl:inline-flex 2xl:flex-col justify-center items-end gap-8"
+            className="2xl:flex-1 2xl:w-3/4 2xl:h-full 2xl:inline-flex 2xl:flex-col 2xl:justify-center 2xl:items-end gap-8"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-3/4 2xl:flex 2xl:flex-col justify-center items-end gap-2.5">
-              <div className="text-right justify-center items-center text-lime-500 2xl:text-8xl font-black font-['Montserrat_Alternates'] leading-16 tracking-tighter">
+            <div className="2xl:w-3/4 flex flex-row 2xl:flex-col 2xl:justify-center 2xl:items-end gap-2 pb-6 2xl:pb-0">
+              <div className="text-right 2xl:justify-center 2xl:items-center text-lime-500 2xl:text-8xl text-6xl font-black font-['Montserrat_Alternates'] 2xl:leading-16 leading-10 tracking-tighter">
                 {introText.map((word, index) => (
                   <motion.span
                     key={index}
@@ -169,8 +169,8 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="w-1/2 2xl:flex justify-center items-center gap-2.5">
-              <div className="2xl:flex-1 text-right justify-start text-white 2xl:text-2xl font-semibold font-['Montserrat'] leading-7">
+            <div className="2xl:w-1/2 2xl:flex justify-center items-center gap-2">
+              <div className="2xl:flex-1 text-right justify-start text-white 2xl:text-2xl font-semibold font-['Montserrat'] 2xl:leading-7 leading-4">
                 Professional studios, equipment, and media education — open to
                 everyone in our community.
               </div>
@@ -180,10 +180,10 @@ export default function Home() {
       </div>
 
       {/* Practical media learning section */}
-      <div className="w-full min-h-screen px-32 relative 2xl:flex 2xl:flex-rows justify-start items-start gap-20 bg-[url('/classes.jpg')] bg-cover bg-center snap-start snap-always">
-        <div className="bg-tcteal-dark/75 absolute px-20 py-36 inset-0 2xl:flex 2xl:flex-col">
+      <div className="w-full min-h-screen 2xl:px-32 relative 2xl:flex 2xl:flex-rows justify-start items-start gap-20 bg-[url('/classes.jpg')] bg-cover bg-top-left 2xl:bg-center snap-start snap-always">
+        <div className="bg-tcteal-dark/75 absolute px-10 2xl:px-20 py-36 inset-0 2xl:flex 2xl:flex-col h-full justify-center items-center place-content-center gap-6">
           <motion.div
-            className="w-1/2 justify-center text-tcteal 2xl:text-9xl font-black font-['Montserrat_Alternates'] leading-20 pt-10 tracking-tighter"
+            className="2xl:w-1/2 justify-center text-tcteal text-7xl 2xl:text-9xl font-black font-['Montserrat_Alternates'] 2xl:leading-20 leading-12 2xl:pt-10 tracking-tighter pb-6 2xl:pb-0"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -193,7 +193,7 @@ export default function Home() {
           </motion.div>
           <div className="2xl:flex-1 2xl:inline-flex 2xl:flex-col justify-end items-end gap-2.5">
             <motion.div
-              className="w-1/2 justify-center text-tcteal 2xl:text-3xl font-medium font-['Montserrat'] leading-9"
+              className="2xl:w-1/2 justify-center text-tcteal 2xl:text-3xl font-medium font-['Montserrat'] leading-4 2xl:leading-9"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
