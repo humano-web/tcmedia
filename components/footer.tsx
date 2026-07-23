@@ -1,6 +1,3 @@
-import Image from "next/image";
-import FootMenu from "./footMenu";
-
 const Footer = () => {
       const menuItems = [
         { name: "Classes", icon: "class-icon" },
