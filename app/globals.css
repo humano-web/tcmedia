@@ -41,7 +41,7 @@ body {
 }
 
 .tcteal-tbg {
-  background-color: var(--color-tcteal);
+  background-color: rgba(0, 40, 40, 0.8);
 }
 
 .long-shadow-green {

@@ -60,7 +60,7 @@ const Footer = () => {
               
               </div>
               <div className="text-black w-1/3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8020138114125!2d-122.94866429999999!3d47.0441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549174fd39e09fa7%3A0x2695135b767f778d!2sTCMedia%20-%20Thurston%20Community%20Media!5e0!3m2!1sen!2sus!4v1784824303195!5m2!1sen!2sus" width="300" height="250" className="rounded-2xl border-4 border-tcgreen-dark long-shadow-dark-green"  loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8020138114125!2d-122.94866429999999!3d47.0441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549174fd39e09fa7%3A0x2695135b767f778d!2sTCMedia%20-%20Thurston%20Community%20Media!5e0!3m2!1sen!2sus!4v1784824303195!5m2!1sen!2sus" width="300" height="250" className="rounded-2xl border-4 border-tcgreen-dark long-shadow-dark-green" loading="lazy" referrerPolicy="strict-origin-when-cross-origin" suppressHydrationWarning></iframe>
               </div>
 
           </div>

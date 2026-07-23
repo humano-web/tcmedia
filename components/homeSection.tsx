@@ -12,7 +12,7 @@ const tester = ({ style = "row", title = "Bring Your Ideas To Life With TCMedia!
             </div>
 
             {style === "row" ?
-                <div className={`w-full tcgreen-tbg p-8 absolute left-0 top-0 h-full flex flex-row gap-6 `}>
+                <div className={`w-full tc${color}-tbg p-8 absolute left-0 top-0 h-full flex flex-row gap-6 `}>
                     <motion.div className={`w-1/2 text-tc${color} h-full pt-38 flex justify-start items-${lposy === "top" ? "start" : lposy === "bottom" ? "end" : "center"} text-${ltext ? "left" : "right"}`}>
 
                         {tplace == "left" && style == "row" ? <motion.div className="text-7xl 2xl:text-9xl font-black font-['Montserrat_Alternates'] leading-24 tracking-tighter"
@@ -48,7 +48,7 @@ const tester = ({ style = "row", title = "Bring Your Ideas To Life With TCMedia!
                     </div>
                 </div>
                 :
-                <div className={`w-full 2xl:bg-tc${color}-dark/75 bg-tc${color}-dark/80 p-8 absolute left-0 top-0 h-full flex flex-col gap-6 justify-${tplace === "top" ? "start" : tplace === "bottom" ? "end" : "center"} items-${tplace === "left" ? "start" : tplace === "right" ? "end" : "center"}`}>
+                <div className={`w-full tc${color}-tbg p-8 absolute left-0 top-0 h-full flex flex-col gap-6 justify-${tplace === "top" ? "start" : tplace === "bottom" ? "end" : "center"} items-${tplace === "left" ? "start" : tplace === "right" ? "end" : "center"}`}>
                     <motion.div className={` flex w-1/2 h-1/4 text-tc${color} text-7xl 2xl:text-9xl font-black font-['Montserrat_Alternates'] leading-24 tracking-tighter items-${lposy === "top" ? "start" : lposy === "bottom" ? "end" : "center"} text-${lposx === "left" ? "left" : lposx === "right" ? "right" : "center"}`}
                         initial={{ opacity: 0, [lani === "top" || lani === "bottom" ? "y" : "x"]: lani === "left" || lani === "top" ? -50 : 50 }}
                         whileInView={{ opacity: 1, [lani === "top" || lani === "bottom" ? "y" : "x"]: 0 }}
