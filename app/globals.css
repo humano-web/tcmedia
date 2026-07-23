@@ -36,6 +36,14 @@ body {
   font-size: 15em;
 }
 
+.tcgreen-tbg {
+  background-color: rgba(17, 39, 0, 0.8);
+}
+
+.tcteal-tbg {
+  background-color: var(--color-tcteal);
+}
+
 .long-shadow-green {
   box-shadow: 0px 0px 0px var(--color-tcgreen),
     0px 0px 0px var(--color-tcgreen),
@@ -64,6 +72,19 @@ body {
 
 .long-shadow-dark-green-text {
   text-shadow: 0px 0px 0px var(--color-tcgreen-dark),
+    0px 0px 0px var(--color-tcgreen-dark),
+    1px 1px 0px var(--color-tcgreen-dark),
+    2px 2px 0px var(--color-tcgreen-dark),
+    3px 3px 0px var(--color-tcgreen-dark),
+    4px 4px 0px var(--color-tcgreen-dark),
+    6px 6px 0px var(--color-tcgreen-dark),
+    8px 8px 0px var(--color-tcgreen-dark),
+    10px 10px 0px var(--color-tcgreen-dark),
+    12px 12px 0px var(--color-tcgreen-dark);
+}
+
+.long-shadow-dark-green {
+  box-shadow: 0px 0px 0px var(--color-tcgreen-dark),
     0px 0px 0px var(--color-tcgreen-dark),
     1px 1px 0px var(--color-tcgreen-dark),
     2px 2px 0px var(--color-tcgreen-dark),

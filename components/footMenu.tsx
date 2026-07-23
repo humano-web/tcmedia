@@ -12,8 +12,8 @@ const FootMenu = () => {
     ];
 
     return (
-    <menu className="w-2/4">
-      <div className="grid 2xl:grid-cols-2 gap-6 content-center text-2xl 2xl:text-3xl font-bold">
+    <menu className="2xl:w-2/4 py-4">
+      <div className="grid grid-cols-2 2xl:gap-6 gap-2 content-center text-2xl 2xl:text-3xl font-bold">
         
         {menuItems.map((item,key) => (
           <FootMenuButton key={key} name={item.name} icon={item.icon} />

@@ -53,7 +53,7 @@ function Header() {
             </svg>
           </div>
           <div
-            className="size-32 2xl:flex absolute origin-center rotate-[-30deg] justify-center items-center text-teal-900 2xl:text-4xl font-extrabold font-['Montserrat'] leading-7 tracking-tighter"
+            className="size-32 2xl:flex absolute origin-center rotate-[-30deg] justify-center items-center text-tcteal 2xl:text-4xl font-extrabold font-['Montserrat'] leading-7 tracking-tighter"
             style={{
               WebkitTextFillColor: "white",
               WebkitTextStrokeWidth: "10px",
@@ -64,7 +64,7 @@ function Header() {
             <br />
             Today!
           </div>
-          <div className="size-32 flex absolute origin-center rotate-[-30deg] justify-center items-center text-teal-dark text-4xl font-extrabold font-['Montserrat'] leading-7 tracking-tighter">
+          <div className="size-32 flex absolute origin-center rotate-[-30deg] justify-center items-center text-tcteal-dark text-4xl font-extrabold font-['Montserrat'] leading-7 tracking-tighter">
             Donate
             <br />
             Today!
@@ -117,7 +117,7 @@ function Header() {
             <Image width={500} height={64} src="/tcm_hlogo.png" alt="TC Media" className="w-16 h-auto" />
             <div className="relative flex items-center justify-center w-xs h-8">
 
-              <span className="font-montserrat font-semibold text-white text-3xl align-middle text-right leading-3 text-shadow-md/50 absolute left-0"
+              <span className="font-montserrat font-semibold text-white text-3xl align-middle text-right leading-3 text-shadow-md/50 absolute -left-8"
                 style={{
                   WebkitTextFillColor: "white",
                   WebkitTextStrokeWidth: "2px",
@@ -127,7 +127,7 @@ function Header() {
               >
                 TC Media
               </span>
-              <span className="font-montserrat font-semibold text-white text-3xl align-middle text-right leading-3 text-shadow-md/50 absolute left-0"
+              <span className="font-montserrat font-semibold text-white text-3xl align-middle text-right leading-3 text-shadow-md/50 absolute -left-8"
               >
                 TC Media
               </span>
