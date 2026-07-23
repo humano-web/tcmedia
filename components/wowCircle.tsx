@@ -8,7 +8,7 @@ const wowCircle = (
   top = 0,
 ) => {
   return (
-    <div className="size-56 2xl:size-96" style={{ top: top }}>
+    <div className="relative size-56 2xl:size-96" style={{ top: top }}>
       <motion.div
         data-svg-wrapper
         className="absolute slow-spinner"

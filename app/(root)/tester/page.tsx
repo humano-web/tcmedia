@@ -13,7 +13,7 @@ const tester = ({ style = "row", title = "Bring Your Ideas To Life With TCMedia!
                 {wowCircle("Inquire Now!", "green", false, 0)}
             </div>
 
-            <div className={`w-full 2xl:bg-tc${color}-dark/75 bg-tc${color}-dark/80 p-8 absolute left-0 top-0 h-full flex flex-${style == "col" ? "col" : "row"} gap-6 justify-center items-center`}>
+            <div className={`w-full 2xl:bg-tc${color}-dark/75 bg-tc${color}-dark/80 p-8 absolute left-0 top-0 h-full flex ${style == "col" ? "flex-col" : "flex-row"} gap-6 justify-center items-center`}>
                 <motion.div className={`w-1/2 text-tc${color} min-h-full pt-38 content-${lpos === "top" ? "start" : lpos === "bottom" ? "end" : "center"} text-${ltext ? "left" : "right"}`}>
 
                     {tplace == "left" && style == "row" ? <motion.div className="text-7xl 2xl:text-9xl font-black font-['Montserrat_Alternates'] leading-24 tracking-tighter"
