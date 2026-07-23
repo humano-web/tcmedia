@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 import { Montserrat, Montserrat_Alternates, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
+import Footer from "@/components/footer";
 
-  const montserrat = Montserrat({
-    variable: "--font-montserrat",
-    subsets: ["latin"],
-  });
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
 
-  const montserratAlternates = Montserrat_Alternates({
-    variable: "--font-montserrat-alternates",
-    weight: ["900"],
-    subsets: ["latin"],
-  });
+const montserratAlternates = Montserrat_Alternates({
+  variable: "--font-montserrat-alternates",
+  weight: ["900"],
+  subsets: ["latin"],
+});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -68,8 +69,11 @@ export default function RootLayout({
       className={`${montserrat.variable} ${geistMono.variable} ${montserratAlternates.variable} antialiased`}
     >
       <body className="2xl:flex 2xl:flex-col gradient-background font-['Montserrat']">
-        <Header />
-        {children}
+        <main className="w-full h-screen overflow-y-scroll overflow-x-hidden relative 2xl:inline-flex 2xl:flex-col justify-start items-start snap-mandatory snap-y">
+          <Header />
+          {children}
+        <Footer />
+        </main>
       </body>
     </html>
   );

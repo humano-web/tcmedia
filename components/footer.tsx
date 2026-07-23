@@ -2,269 +2,74 @@ import Image from "next/image";
 import FootMenu from "./footMenu";
 
 const Footer = () => {
+      const menuItems = [
+        { name: "Classes", icon: "class-icon" },
+        { name: "Services", icon: "services-icon" },
+        { name: "Facilities", icon: "facilities-icon" },
+        { name: "Volunteer", icon: "volunteer-icon" },
+        { name: "Membership", icon: "membership-icon" },
+        { name: "Events", icon: "events-icon" },
+        { name: "About", icon: "about-icon" },
+    ];
+
+
   return (
-    <footer className="2xl:flex w-full min-h-screen 2xl:flex-col items-start justify-center gap-6 px-3 py-6 sm:gap-8 sm:p-6 lg:p-8 snap-start snap-always">
-      <div className="2xl:flex w-full 2xl:flex-col items-start justify-start gap-7 rounded-xl border-4 border-tcteal-dark bg-tcteal px-3 py-6 sm:gap-9 sm:px-4 sm:py-8 long-shadow-teal-dark">
-        <div className="self-stretch 2xl:flex flex-col 2xl:flex-row justify-start items-start lg:items-center gap-8 lg:gap-12">
-          <div className="relative 2xl:flex h-16 w-full lg:w-2/4 justify-center items-center sm:h-20">
-            <div className="absolute w-full justify-start text-tcteal-light lg:text-3xl xl:text-5xl 2xl:text-6xl font-medium font-['Montserrat'] leading-tight tracking-tighter"
-              style={{
-                WebkitTextFillColor: "white",
-                WebkitTextStrokeWidth: "4px",
-                WebkitTextStrokeColor: "#002828",
-              }}
-            >
-              Thurston Community Media
-            </div>
-            <div className="absolute w-full justify-start text-tcteal-light md:text-3xl xl:text-5xl 2xl:text-6xl font-medium font-['Montserrat'] leading-tight tracking-tighter" >
-              Thurston Community Media
-            </div>
-          </div>
-          <div className="2xl:flex 2xl:flex-1 2xl:flex-col justify-center items-start lg:items-end gap-4 w-full">
-            <div className="2xl:flex w-full  2xl:flex-row justify-start items-start sm:items-center gap-3 sm:gap-4">
-              <div
-                className="2xl:flex h-12 w-full sm:w-auto px-4 py-3 bg-tcteal-light border-b border-red-500 justify-start items-center gap-2"
+    <footer className="2xl:flex flex-col w-full min-h-screen justify-center items-center relative snap-start snap-always pt-60">
+      <div className="absolute bottom-0 flex flex-col w-full h-auto p-0 bg-tcgreen-light z-0 content-end" />
+      <div className="relative w-full h-50
+       overflow-hidden">
+        <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
+          <path
+            d="M0,200 L0.0,100.0 C 6.3,101.2 18.8,103.7 25.0,104.9 C 31.3,106.1 43.8,108.4 50.0,109.6 C 56.3,110.6 68.8,112.6 75.0,113.6 C 81.3,114.4 93.8,116.0 100.0,116.8 C 106.3,117.3 118.8,118.5 125.0,119.0 C 131.3,119.2 143.8,119.7 150.0,119.9 C 156.3,119.9 168.8,119.8 175.0,119.7 C 181.3,119.3 193.8,118.6 200.0,118.2 C 206.3,117.5 218.8,116.3 225.0,115.6 C 231.3,114.7 243.8,112.9 250.0,112.0 C 256.3,110.9 268.8,108.7 275.0,107.6 C 281.3,106.4 293.8,104.0 300.0,102.8 C 306.3,101.5 318.8,99.0 325.0,97.8 C 331.3,96.6 343.8,94.2 350.0,93.0 C 356.3,91.9 368.8,89.7 375.0,88.6 C 381.3,87.7 393.8,85.8 400.0,84.9 C 406.3,84.2 418.8,82.8 425.0,82.1 C 431.3,81.7 443.8,80.8 450.0,80.4 C 456.3,80.3 468.8,80.1 475.0,80.0 C 481.3,80.2 493.8,80.6 500.0,80.8 C 506.3,81.3 518.8,82.3 525.0,82.8 C 531.3,83.6 543.8,85.1 550.0,85.9 C 556.3,86.9 568.8,88.8 575.0,89.8 C 581.3,91.0 593.8,93.3 600.0,94.4 C 606.3,95.6 618.8,98.1 625.0,99.3 C 631.3,100.5 643.8,103.0 650.0,104.3 C 656.3,105.5 668.8,107.8 675.0,109.0 C 681.3,110.0 693.8,112.1 700.0,113.1 C 706.3,113.9 718.8,115.7 725.0,116.5 C 731.3,117.1 743.8,118.2 750.0,118.8 C 756.3,119.1 768.8,119.6 775.0,119.9 C 781.3,119.9 793.8,119.8 800.0,119.8 C 806.3,119.5 818.8,118.8 825.0,118.5 C 831.3,117.9 843.8,116.6 850.0,116.0 C 856.3,115.1 868.8,113.4 875.0,112.5 C 881.3,111.4 893.8,109.3 900.0,108.2 C 906.3,107.0 918.8,104.7 925.0,103.5 C 931.3,102.3 943.8,99.8 950.0,98.5 C 956.3,97.3 968.8,94.8 975.0,93.6 C 981.3,92.5 993.8,90.2 1000.0,89.1 C 1006.3,88.1 1018.8,86.3 1025.0,85.3 L1000.0,200.0 L0,200.0Z"
+            fill="#d3ffba"
+          >
+            <animate
+              attributeName="d"
+              dur="9.0s"
+              repeatCount="indefinite"
+              values="M0,200 L0.0,100.0 C 6.3,101.2 18.8,103.7 25.0,104.9 C 31.3,106.1 43.8,108.4 50.0,109.6 C 56.3,110.6 68.8,112.6 75.0,113.6 C 81.3,114.4 93.8,116.0 100.0,116.8 C 106.3,117.3 118.8,118.5 125.0,119.0 C 131.3,119.2 143.8,119.7 150.0,119.9 C 156.3,119.9 168.8,119.8 175.0,119.7 C 181.3,119.3 193.8,118.6 200.0,118.2 C 206.3,117.5 218.8,116.3 225.0,115.6 C 231.3,114.7 243.8,112.9 250.0,112.0 C 256.3,110.9 268.8,108.7 275.0,107.6 C 281.3,106.4 293.8,104.0 300.0,102.8 C 306.3,101.5 318.8,99.0 325.0,97.8 C 331.3,96.6 343.8,94.2 350.0,93.0 C 356.3,91.9 368.8,89.7 375.0,88.6 C 381.3,87.7 393.8,85.8 400.0,84.9 C 406.3,84.2 418.8,82.8 425.0,82.1 C 431.3,81.7 443.8,80.8 450.0,80.4 C 456.3,80.3 468.8,80.1 475.0,80.0 C 481.3,80.2 493.8,80.6 500.0,80.8 C 506.3,81.3 518.8,82.3 525.0,82.8 C 531.3,83.6 543.8,85.1 550.0,85.9 C 556.3,86.9 568.8,88.8 575.0,89.8 C 581.3,91.0 593.8,93.3 600.0,94.4 C 606.3,95.6 618.8,98.1 625.0,99.3 C 631.3,100.5 643.8,103.0 650.0,104.3 C 656.3,105.5 668.8,107.8 675.0,109.0 C 681.3,110.0 693.8,112.1 700.0,113.1 C 706.3,113.9 718.8,115.7 725.0,116.5 C 731.3,117.1 743.8,118.2 750.0,118.8 C 756.3,119.1 768.8,119.6 775.0,119.9 C 781.3,119.9 793.8,119.8 800.0,119.8 C 806.3,119.5 818.8,118.8 825.0,118.5 C 831.3,117.9 843.8,116.6 850.0,116.0 C 856.3,115.1 868.8,113.4 875.0,112.5 C 881.3,111.4 893.8,109.3 900.0,108.2 C 906.3,107.0 918.8,104.7 925.0,103.5 C 931.3,102.3 943.8,99.8 950.0,98.5 C 956.3,97.3 968.8,94.8 975.0,93.6 C 981.3,92.5 993.8,90.2 1000.0,89.1 C 1006.3,88.1 1018.8,86.3 1025.0,85.3 L1000.0,200.0 L0,200.0Z;
+         M0,200 L0.0,100.0 C 6.3,98.8 18.8,96.3 25.0,95.1 C 31.3,93.9 43.8,91.6 50.0,90.4 C 56.3,89.4 68.8,87.4 75.0,86.4 C 81.3,85.6 93.8,84.0 100.0,83.2 C 106.3,82.7 118.8,81.5 125.0,81.0 C 131.3,80.8 143.8,80.3 150.0,80.1 C 156.3,80.1 168.8,80.3 175.0,80.3 C 181.3,80.7 193.8,81.4 200.0,81.8 C 206.3,82.5 218.8,83.8 225.0,84.4 C 231.3,85.3 243.8,87.1 250.0,88.0 C 256.3,89.1 268.8,91.3 275.0,92.4 C 281.3,93.6 293.8,96.0 300.0,97.2 C 306.3,98.5 318.8,101.0 325.0,102.2 C 331.3,103.4 343.8,105.8 350.0,107.0 C 356.3,108.1 368.8,110.3 375.0,111.4 C 381.3,112.3 393.8,114.2 400.0,115.1 C 406.3,115.8 418.8,117.2 425.0,117.9 C 431.3,118.3 443.8,119.2 450.0,119.6 C 456.3,119.7 468.8,119.9 475.0,120.0 C 481.3,119.8 493.8,119.4 500.0,119.2 C 506.3,118.7 518.8,117.7 525.0,117.2 C 531.3,116.4 543.8,114.9 550.0,114.1 C 556.3,113.1 568.8,111.2 575.0,110.2 C 581.3,109.0 593.8,106.8 600.0,105.6 C 606.3,104.4 618.8,101.9 625.0,100.7 C 631.3,99.5 643.8,97.0 650.0,95.7 C 656.3,94.5 668.8,92.2 675.0,91.0 C 681.3,90.0 693.8,87.9 700.0,86.9 C 706.3,86.1 718.8,84.3 725.0,83.5 C 731.3,82.9 743.8,81.8 750.0,81.2 C 756.3,80.9 768.8,80.4 775.0,80.1 C 781.3,80.1 793.8,80.2 800.0,80.2 C 806.3,80.5 818.8,81.2 825.0,81.5 C 831.3,82.1 843.8,83.4 850.0,84.0 C 856.3,84.9 868.8,86.6 875.0,87.5 C 881.3,88.6 893.8,90.7 900.0,91.8 C 906.3,93.0 918.8,95.3 925.0,96.5 C 931.3,97.8 943.8,100.3 950.0,101.5 C 956.3,102.7 968.8,105.2 975.0,106.4 C 981.3,107.5 993.8,109.8 1000.0,110.9 C 1006.3,111.9 1018.8,113.8 1025.0,114.7 L1000.0,200.0 L0,200.0Z;
+         M0,200 L0.0,100.0 C 6.3,101.2 18.8,103.7 25.0,104.9 C 31.3,106.1 43.8,108.4 50.0,109.6 C 56.3,110.6 68.8,112.6 75.0,113.6 C 81.3,114.4 93.8,116.0 100.0,116.8 C 106.3,117.3 118.8,118.5 125.0,119.0 C 131.3,119.2 143.8,119.7 150.0,119.9 C 156.3,119.9 168.8,119.8 175.0,119.7 C 181.3,119.3 193.8,118.6 200.0,118.2 C 206.3,117.5 218.8,116.3 225.0,115.6 C 231.3,114.7 243.8,112.9 250.0,112.0 C 256.3,110.9 268.8,108.7 275.0,107.6 C 281.3,106.4 293.8,104.0 300.0,102.8 C 306.3,101.5 318.8,99.0 325.0,97.8 C 331.3,96.6 343.8,94.2 350.0,93.0 C 356.3,91.9 368.8,89.7 375.0,88.6 C 381.3,87.7 393.8,85.8 400.0,84.9 C 406.3,84.2 418.8,82.8 425.0,82.1 C 431.3,81.7 443.8,80.8 450.0,80.4 C 456.3,80.3 468.8,80.1 475.0,80.0 C 481.3,80.2 493.8,80.6 500.0,80.8 C 506.3,81.3 518.8,82.3 525.0,82.8 C 531.3,83.6 543.8,85.1 550.0,85.9 C 556.3,86.9 568.8,88.8 575.0,89.8 C 581.3,91.0 593.8,93.3 600.0,94.4 C 606.3,95.6 618.8,98.1 625.0,99.3 C 631.3,100.5 643.8,103.0 650.0,104.3 C 656.3,105.5 668.8,107.8 675.0,109.0 C 681.3,110.0 693.8,112.1 700.0,113.1 C 706.3,113.9 718.8,115.7 725.0,116.5 C 731.3,117.1 743.8,118.2 750.0,118.8 C 756.3,119.1 768.8,119.6 775.0,119.9 C 781.3,119.9 793.8,119.8 800.0,119.8 C 806.3,119.5 818.8,118.8 825.0,118.5 C 831.3,117.9 843.8,116.6 850.0,116.0 C 856.3,115.1 868.8,113.4 875.0,112.5 C 881.3,111.4 893.8,109.3 900.0,108.2 C 906.3,107.0 918.8,104.7 925.0,103.5 C 931.3,102.3 943.8,99.8 950.0,98.5 C 956.3,97.3 968.8,94.8 975.0,93.6 C 981.3,92.5 993.8,90.2 1000.0,89.1 C 1006.3,88.1 1018.8,86.3 1025.0,85.3 L1000.0,200.0 L0,200.0Z"
+            />
+          </path>
+        </svg>
+      </div>
+      <div className="2xl:flex w-full h-screen 2xl:flex-col gap-7  bg-tcgreen-light px-3 py-6 sm:gap-9 sm:px-4 sm:py-8 ">
+        <div className="flex w-full 2xl:flex-col items-start justify-start gap-7 rounded-xl sm:gap-9 sm:px-4 sm:py-8 ">
+          <div className="self-stretch 2xl:flex flex-row 2xl:flex-row justify-start items-start lg:items-center gap-8 lg:gap-12">
+            <div className="relative 2xl:flex w-fit sm:h-50 lg:w-2/4 justify-center content-center h-20">
+              <div className="flex absolute w-full h-50 justify-start text-tcteal-light text-3xl xl:text-5xl 2xl:text-8xl font-semibold font-['Montserrat'] leading-6 2xl:leading-16 tracking-tighter"
+                style={{
+                  WebkitTextFillColor: "#d3ffba",
+                  WebkitTextStrokeWidth: "4px",
+                  WebkitTextStrokeColor: "#002828",
+                }}
               >
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.598 7L11.345 12.12C11.5281 12.2831 11.7648 12.3732 12.01 12.3732C12.2552 12.3732 12.4919 12.2831 12.675 12.12L18.423 7H5.598ZM20 8.273L14.006 13.614C13.4565 14.1037 12.7461 14.3744 12.01 14.3744C11.2739 14.3744 10.5635 14.1037 10.014 13.614L4 8.254V17H20V8.273ZM4 5H20C20.5304 5 21.0391 5.21071 21.4142 5.58579C21.7893 5.96086 22 6.46957 22 7V17C22 17.5304 21.7893 18.0391 21.4142 18.4142C21.0391 18.7893 20.5304 19 20 19H4C3.46957 19 2.96086 18.7893 2.58579 18.4142C2.21071 18.0391 2 17.5304 2 17V7C2 6.46957 2.21071 5.96086 2.58579 5.58579C2.96086 5.21071 3.46957 5 4 5V5Z"
-                      fill="#697077"
-                    />
-                  </svg>
-                </div>
-                <div className="justify-start text-zinc-500 2xl:text-base font-normal font-['Montserrat'] leading-6">
-                  Enter your email to get the latest news...
-                </div>
+                Thurston Community Media
               </div>
-              <div
-                className="h-12 px-3 py-4 bg-tcgreen border-2 border-tcgreen 2xl:flex justify-center items-center"
-              >
-                <div className="px-4 2xl:flex justify-center items-center gap-2.5">
-                  <div className="justify-start text-gray-900 2xl:text-base font-medium font-['Montserrat'] leading-4 tracking-wide">
-                    Subscribe
-                  </div>
-                </div>
+              <div className="flex absolute w-full justify-start text-tcteal-light text-3xl xl:text-5xl 2xl:text-8xl font-semibold font-['Montserrat'] leading-6 2xl:leading-16 tracking-tighter" >
+                Thurston Community Media
               </div>
             </div>
-          </div>
-        </div>
-        <div className="self-stretch h-px bg-tcteal-dark" />
-        <div className="w-full 2xl:flex  2xl:flex-row content-center items-start xl:items-center gap-6">
-          {/* <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-col justify-start items-start gap-2">
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Home
+              <div className="text-tcgreen-dark w-1/3">
+              <ul className="flex flex-col gap-2 text-xl font-semibold">
+                {menuItems.map((item) => (
+                  <li key={item.name}>{item.name}</li>
+                ))}
+              </ul>
+              
               </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Classes
+              <div className="text-black w-1/3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8020138114125!2d-122.94866429999999!3d47.0441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549174fd39e09fa7%3A0x2695135b767f778d!2sTCMedia%20-%20Thurston%20Community%20Media!5e0!3m2!1sen!2sus!4v1784824303195!5m2!1sen!2sus" width="300" height="250" className="rounded-2xl border-4 border-tcgreen-dark long-shadow-dark-green"  loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
               </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Services
-              </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Facilities
-              </div>
-            </div>
-          </div>
-          <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-col justify-start items-start gap-2">
-            <div
-              className="2xl:flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Volunteer
-              </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Membership
-              </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                Events
-              </div>
-            </div>
-            <div
-              className="2xl:inline-flex justify-start items-center gap-2"
-            >
-              <div className="justify-start text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-6">
-                About
-              </div>
-            </div>
-          </div> */}
-          <FootMenu />
-
-          <div className="w-full xl:w-1/4 2xl:flex 2xl:flex-row justify-start xl:justify-end items-start sm:items-center gap-3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8020138114125!2d-122.94866429999999!3d47.0441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549174fd39e09fa7%3A0x2695135b767f778d!2sTCMedia%20-%20Thurston%20Community%20Media!5e0!3m2!1sen!2sus!4v1779427404149!5m2!1sen!2sus"
-              width="228"
-              height="228"
-              style={{ outline: 0 }}
-              loading="lazy"
-              className="w-56 h-56 rounded-lg shadow-[4px_4px_0px_0px_rgba(12,77,77,1.00)] border-[3px] border-tcteal-dark"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
 
           </div>
-            <div className="w-128 text-left justify-center">
-              <span className="text-tcteal-dark 2xl:text-3xl font-bold font-['Montserrat'] leading-7">
-                440 Yauger Way SW Olympia, WA
-              </span>
-              <span className="text-tcteal-dark 2xl:text-lg font-bold font-['Montserrat'] leading-4">
-                {" "}
-              </span>
-              <span className="text-tcteal-dark 2xl:text-2xl font-bold font-['Montserrat'] leading-5">
-                360.956.3100
-              </span>
-            </div>
-          <div className="w-full xl:w-1/3 2xl:flex 2xl:flex-col justify-start items-start gap-6">
-            <div className="2xl:flex 2xl:flex-col justify-start items-start gap-4">
-              <div
-                className="py-3 2xl:inline-flex justify-start items-center gap-2"
-              >
-                <div className="justify-start text-gray-900 2xl:text-lg font-bold leading-5">
-                  Download our App!
-                </div>
-              </div>
-              <div className="w-full 2xl:flex justify-start items-start gap-2">
-              </div>
-            </div>
-            <div className="2xl:flex 2xl:flex-col justify-start items-start gap-2">
-              <div
-                data-active="False"
-                data-badge="false"
-                data-icon-left="false"
-                data-icon-right="false"
-                data-menu-type="Horizontal"
-                data-text="true"
-                data-vertical="False"
-                className="py-3 2xl:inline-flex justify-start items-center gap-2"
-              >
-                <div className="justify-start text-gray-900 2xl:text-lg font-bold font-['Roboto'] leading-5">
-                  Join Us
-                </div>
-              </div>
-              <div className="w-96 2xl:inline-flex justify-start items-center gap-4">
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17.812 5.01699H6.145C3.855 5.01699 2 6.85199 2 9.11599V14.884C2 17.148 3.856 18.984 6.145 18.984H17.812C20.102 18.984 21.957 17.148 21.957 14.884V9.11599C21.957 6.85199 20.101 5.01599 17.812 5.01599V5.01699ZM15.009 12.28L9.552 14.855C9.51872 14.871 9.48192 14.8784 9.44503 14.8763C9.40815 14.8743 9.37237 14.863 9.34103 14.8434C9.3097 14.8239 9.28382 14.7967 9.2658 14.7645C9.24779 14.7322 9.23822 14.6959 9.238 14.659V9.34999C9.23867 9.31286 9.24872 9.27651 9.26722 9.24432C9.28573 9.21212 9.31208 9.18513 9.34382 9.16587C9.37556 9.1466 9.41167 9.13568 9.44877 9.13413C9.48587 9.13258 9.52276 9.14044 9.556 9.15699L15.014 11.892C15.0504 11.9101 15.0809 11.9381 15.102 11.9728C15.1232 12.0075 15.1341 12.0474 15.1336 12.0881C15.1331 12.1287 15.1211 12.1683 15.0991 12.2025C15.077 12.2366 15.0458 12.2638 15.009 12.281V12.28Z"
-                      fill="#160F29"
-                    />
-                  </svg>
-                </div>
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.04598 5.865V8.613H7.03198V11.973H9.04598V21.959H13.18V11.974H15.955C15.955 11.974 16.215 10.363 16.341 8.601H13.197V6.303C13.197 5.96 13.647 5.498 14.093 5.498H16.347V2H13.283C8.94298 2 9.04598 5.363 9.04598 5.865Z"
-                      fill="#160F29"
-                    />
-                  </svg>
-                </div>
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M22 5.90704C21.2504 6.23442 20.4565 6.44908 19.644 6.54404C20.4968 6.04327 21.138 5.24915 21.448 4.31004C20.64 4.78037 19.7587 5.11164 18.841 5.29004C18.4545 4.88525 17.9897 4.56343 17.4748 4.34422C16.9598 4.12501 16.4056 4.01301 15.846 4.01504C13.58 4.01504 11.743 5.82504 11.743 8.05504C11.743 8.37104 11.779 8.68004 11.849 8.97504C10.2236 8.89774 8.63212 8.48245 7.17617 7.75568C5.72022 7.02891 4.43176 6.00662 3.393 4.75404C3.02883 5.36844 2.83742 6.06982 2.839 6.78404C2.8397 7.45201 3.00683 8.10927 3.32529 8.69644C3.64375 9.2836 4.1035 9.78215 4.663 10.147C4.01248 10.126 3.37602 9.95237 2.805 9.64004V9.69004C2.805 11.648 4.22 13.281 6.095 13.653C5.74261 13.7465 5.37958 13.7939 5.015 13.794C4.75 13.794 4.493 13.769 4.242 13.719C4.51008 14.527 5.02311 15.2314 5.70982 15.7344C6.39653 16.2374 7.22284 16.5141 8.074 16.526C6.61407 17.6506 4.82182 18.2581 2.979 18.253C2.647 18.253 2.321 18.233 2 18.197C3.88125 19.3877 6.06259 20.0183 8.289 20.015C15.836 20.015 19.962 13.858 19.962 8.51904L19.948 7.99604C20.7529 7.42971 21.4481 6.72189 22 5.90704Z"
-                      fill="#160F29"
-                    />
-                  </svg>
-                </div>
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2V2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.018V16.017Z"
-                      fill="#160F29"
-                    />
-                    <path
-                      d="M11.982 6.81897C10.6134 6.82109 9.30154 7.36576 8.33391 8.33358C7.36627 9.3014 6.82186 10.6134 6.82001 11.982C6.82159 13.3509 7.36603 14.6633 8.33391 15.6314C9.30179 16.5994 10.6141 17.1441 11.983 17.146C13.3521 17.1444 14.6647 16.5998 15.6328 15.6317C16.6008 14.6636 17.1454 13.3511 17.147 11.982C17.1449 10.6131 16.5999 9.30085 15.6317 8.33316C14.6634 7.36547 13.3509 6.82129 11.982 6.81997V6.81897ZM11.982 15.138C11.1452 15.138 10.3428 14.8056 9.75109 14.2139C9.15941 13.6222 8.82701 12.8197 8.82701 11.983C8.82701 11.1462 9.15941 10.3437 9.75109 9.75205C10.3428 9.16037 11.1452 8.82797 11.982 8.82797C12.8188 8.82797 13.6213 9.16037 14.2129 9.75205C14.8046 10.3437 15.137 11.1462 15.137 11.983C15.137 12.8197 14.8046 13.6222 14.2129 14.2139C13.6213 14.8056 12.8188 15.138 11.982 15.138Z"
-                      fill="#160F29"
-                    />
-                    <path
-                      d="M17.156 8.09497C17.8392 8.09497 18.393 7.54115 18.393 6.85797C18.393 6.1748 17.8392 5.62097 17.156 5.62097C16.4728 5.62097 15.919 6.1748 15.919 6.85797C15.919 7.54115 16.4728 8.09497 17.156 8.09497Z"
-                      fill="#160F29"
-                    />
-                  </svg>
-                </div>
-                <div data-svg-wrapper className="relative">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21.959 13.719V21.098H17.681V14.213C17.681 12.483 17.062 11.303 15.514 11.303C14.332 11.303 13.628 12.099 13.319 12.868C13.206 13.143 13.177 13.526 13.177 13.911V21.098H8.897C8.897 21.098 8.955 9.438 8.897 8.229H13.177V10.053L13.149 10.095H13.177V10.053C13.745 9.178 14.76 7.927 17.033 7.927C19.848 7.927 21.959 9.767 21.959 13.719ZM4.421 2.026C2.958 2.026 2 2.986 2 4.249C2 5.484 2.93 6.473 4.365 6.473H4.393C5.886 6.473 6.813 5.484 6.813 4.249C6.787 2.986 5.887 2.026 4.422 2.026H4.421ZM2.254 21.098H6.532V8.229H2.254V21.098Z"
-                      fill="#160F29"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="justify-start text-tcteal-dark 2xl:text-lg font-bold font-['Montserrat'] leading-4">
-          TCMedia is a 501(c)(3) non-profit. Your donation is tax deductible.
-          EIN: 91-1269977
-        </div>
-        <div className="self-stretch h-px bg-tcteal-dark" />
-        <div className="self-stretch 2xl:inline-flex justify-start items-center gap-12">
-          <div className="justify-start text-gray-900 2xl:text-sm font-normal leading-5">
-            Thurston Community Media @ 2026. All rights reserved.
-          </div>
+              <div>TCMedia is a 501(c)(3) non-profit. Your donation is tax deductible. EIN: 91-1269977</div>
         </div>
       </div>
     </footer>
+
+
   );
 };
 
