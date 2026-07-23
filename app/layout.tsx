@@ -66,9 +66,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${montserrat.variable} ${geistMono.variable} ${montserratAlternates.variable} antialiased`}
     >
-      <body className="2xl:flex 2xl:flex-col gradient-background font-['Montserrat']">
+      <body
+        suppressHydrationWarning
+        className="2xl:flex 2xl:flex-col gradient-background font-['Montserrat']"
+      >
         <main className="w-full h-screen overflow-y-scroll overflow-x-hidden relative 2xl:inline-flex 2xl:flex-col justify-start items-start snap-mandatory snap-y">
           <Header />
           {children}
