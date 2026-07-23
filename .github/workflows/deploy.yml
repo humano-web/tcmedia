@@ -9,6 +9,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Validate required secrets
+        run: |
+          missing=""
+          [ -z "$HOST" ]     && missing="$missing EC2_HOST"
+          [ -z "$USERNAME" ] && missing="$missing EC2_USER"
+          [ -z "$KEY" ]      && missing="$missing EC2_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing required secrets:$missing"
+            echo "::error::Go to Settings > Secrets and variables > Actions and add each missing secret."
+            exit 1
+          fi
+        env:
+          HOST: ${{ secrets.EC2_HOST }}
+          USERNAME: ${{ secrets.EC2_USER }}
+          KEY: ${{ secrets.EC2_KEY }}
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
